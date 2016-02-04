@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Volumen</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:200px">Cubo</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="cilindro.html">Cilindro</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cono.html">Cono</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cubo.html">Cubo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="esfera.html">Esfera</a></li>
+                        <li class="divider"></li>
+                        <li><a href="paralelepipedo.html">Paralelepi&#769;pedo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="paralelepipedo_recto.html">Paralelepi&#769;pedo recto</a></li>
+                        <li class="divider"></li>
+                        <li><a href="piramide.html">Pira&#769;mide</a></li>
+                        <li class="divider"></li>
+                        <li><a href="prisma.html">Prisma</a></li>
+                        <li class="divider"></li>
+                        <li><a href="tetraedro.html">Tetraedro</a></li>                        
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR --> 
+
+                 <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/obyem_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Volumen/cubo.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                  Introduzca la longitudes de una arista del cubo:<br/><br/>
+
+                    <div class="row">   
+                      <div class="input-field col s6 offset-s3">                                        
+                        a = <INPUT id=n1 class="validate data" type='number' maxLength=12 size=10>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="vcube();">Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+
+                      <center><img src="../../image/cubo.png" alt="Cubo"/></center>
+
+                      Un cubo es un poliedro en el cual cada cara es un cuadrado. Todas las aristas y caras del cubo son iguales.<br/><br/>
+
+                      El volumen de un cubo equivale a la longitud de su arista elevada al cubo.<br/><br/>
+
+                      <b>F&oacute;rmulas para calcular el volumen del cubo:</b><br/><br/>
+
+                          V = a<sup>3</sup>
+
+                          <br/><br/>
+
+                      donde <b>V</b> es el volumen del cubo, y <b>a</b> es la longitud de una arista del cubo.  
+
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>

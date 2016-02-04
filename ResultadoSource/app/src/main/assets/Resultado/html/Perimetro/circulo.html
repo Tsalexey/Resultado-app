@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Peri&#769;metro</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:150px">Ci&#769;rculo</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="circulo.html">Ci&#769;rculo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cuadrado.html">Cuadrado</a></li>
+                        <li class="divider"></li>
+                        <li><a href="paralelogramo.html">Paralelogramo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="rectangulo.html">Recta&#769;ngulo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="rombo.html">Rombo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="trapecio.html">Trapecio</a></li>
+                        <li class="divider"></li>
+                        <li><a href="triangulo.html">Tria&#769;ngulo</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->     
+
+                  <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/perimetr_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Perimetro/circulo.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                  Seleccione los datos conocidos:<br/><br/>
+
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3">
+                         <select id="vform" onchange=c_sc1(this.value) class="browser-default">
+                            <option value="1" selected="true" class="my-option">longitud del radio del c&iacute;rculo</option>
+                            <option value="2"  class="my-option">longitud del di&aacute;metro del c&iacute;rculo</option>
+                          </select>       
+                      </div>   
+                    </div>
+
+                    Introduzca la longitud del<div style="display:inline;" id="st">radio</div> del c&iacute;rculo:<br/><br/>
+
+                    <div class="row">   
+                      <div class="input-field col s6 offset-s3">                                        
+                          r = <INPUT type="number" id=n1  type='number' maxLength=12 size=10 class="validate data">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="pcircle();">Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+
+                   
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+
+                      <center><img src="../../image/circulo.png" alt="C&iacute;rculo"/></center>
+
+                      Un c&iacute;rculo es una figura geom&eacute;trica definida por los puntos de un plano cuya distancia a un punto particular (llamado centro del c&iacute;rculo) no excede un valor particular mayor a cero (llamado radio del c&iacute;rculo). <br/><br/>
+
+                      <b>F&oacute;rmulas para calcular la circunferencia de un c&iacute;rculo:</b><br/><br/>
+
+
+                          P = 2 &pi; r
+                          <br/>
+                          P = &pi; d
+
+                          <br/><br/>
+
+                      donde P es la circunferencia del c&iacute;rculo,  <b>r</b> es el radio del c&iacute;rculo,  <b>d</b> es el di&aacute;metro del c&iacute;rculo,  &pi; = 3.141592    
+
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>

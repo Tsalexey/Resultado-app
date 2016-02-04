@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:1050px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Vectores</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:250px">A&#769;ngulo entre vectores</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="angulo_entre_vectores.html">A&#769;ngulo entre vectores</a></li>
+                        <li class="divider"></li>
+                        <li><a href="area_de_triangulo.html">A&#769;rea de tria&#769;ngulo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="area_de_paralelogramo.html">A&#769;rea de paralelogramo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="colinealidad.html">Colinealidad</a></li>
+                        <li class="divider"></li>
+                        <li><a href="complanaridad.html">Coplanaridad</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cosenos_directores.html">Cosenos directores</a></li>
+                        <li class="divider"></li>
+                        <li><a href="descomposicion.html">Descomposicio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="modulo_y_longitud.html">Mo&#769;dulo y longitud</a></li>
+                        <li class="divider"></li>
+                        <li><a href="multiplicacion.html">Multiplicacio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="ortogonalidad.html">Ortogonalidad</a></li>
+                        <li class="divider"></li>
+                        <li><a href="prueba_de_base.html">Prueba de base</a></li>
+                        <li class="divider"></li>
+                        <li><a href="producto_escalar.html">Producto escalar</a></li>
+                        <li class="divider"></li>
+                        <li><a href="producto_mixto.html">Producto mixto</a></li>
+                        <li class="divider"></li>
+                        <li><a href="producto_vectorial.html">Producto vectorial</a></li>
+                        <li class="divider"></li>
+                        <li><a href="proyeccion.html">Proyeccio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="suma_y_resto.html">Suma y resto</a></li>
+                        <li class="divider"></li>
+                        <li><a href="vector_dados_puntos.html">Calcular vector con dados puntos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="volumen_de_piramide.html">Volumen de pira&#769;mide</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->                
+
+                  <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/vectors_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Vectores/angulo_entre_vectores.js"></script>  
+
+                  <div id="calculadora" class="col s12">
+
+                    Seleccione la dimensi&oacute;n del espacio de los vectores y su forma de representaci&oacute;n:<br/><br/>
+                    Dimensi&oacute;n del espacio vectorial:
+
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3">
+                        <select name="vsize" onchange=select2_3(this.value,6)  class="browser-default">
+                          <option value="2" class="my-option">2</option>
+                          <option value="3" selected="true"  class="my-option">3</option>
+                        </select>
+                      </div>   
+                    </div>
+
+                    Forma del Vector 1:
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3">
+                        <select name="vform" onchange=vectorf_0(this.value)  class="browser-default">
+                          <option value="1" selected="true"  class="my-option">Coordenadas</option>
+                          <option value="2"  class="my-option">Puntos</option>
+                        </select>
+                      </div>   
+                    </div>
+
+                    Forma del Vector 2:
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3">                    
+                        <select name="vform" onchange=vectorf_1(this.value)  class="browser-default">
+                          <option value="1" selected="true"  class="my-option">Coordenadas</option>
+                          <option value="2"  class="my-option">Puntos</option>
+                        </select>
+                      </div>   
+                    </div>
+
+                    Introduzca los valores de los vectores.<br/><br/>
+
+                    Vector 1:<br/>
+                    <div id="vect" name="vect">
+                      <INPUT id="p1" maxLength=2 class=mvname style="text-decoration:overline" value="a"> = {<INPUT type="number" id="n1" maxLength=8 class="validate data" value="" onchange=provercainput(this)>; <INPUT type="number" id="n2" maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id=v1 style="display:inline;">; <INPUT type="number" id="n3" maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>}
+                    </div>
+
+                    <div id="points" name="points" style="display: none;">
+                      <i>Punto de origen:</i><br>
+                      <INPUT id="p2" maxLength=2 class=mvname value="A"> (<INPUT type="number" id="n4" maxLength=8 class="validate data" value="" onchange=provercainput(this)>, <INPUT type="number" id="n5" maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id="v2" style="display:inline;">, <INPUT type="number" id="n6" maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>) <br><i>Punto de destino:</i><br>
+                      <INPUT id="p3" maxLength=2 class=mvname value="B"> (<INPUT type="number" id="n7" maxLength=8 class="validate data" value="" onchange=provercainput(this)>, <INPUT type="number" id="n8" maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id="v3" style="display:inline;">, <INPUT type="number" id="n9" maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>)
+                    </div>
+
+                    Vector 2:<br/>
+                    <div id="vect1" name="vect1">
+                      <INPUT id="p4" maxLength=2 class=mvname style="text-decoration:overline" value="b"> = {<INPUT type="number" id="n10" maxLength=8 class="validate data" value="" onchange=provercainput(this)>; <INPUT type="number" id="n11" maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id="v4" style="display:inline;">; <INPUT type="number" id="n12" maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>}
+                    </div>
+
+                    <div id="points1" name="points1" style="display: none;">
+                      <i>Punto de origen:</i><br>
+                      <INPUT id="p5" maxLength=2 class="mvname" value="C"> = (<INPUT type="number" id="n13" maxLength=8 class="validate data" value="" onchange=provercainput(this)>, <INPUT type="number" id="n14" maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id=v5 style="display:inline;">, <INPUT type="number" id="n15" maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>) <br><i>Punto de destino:</i><br>
+                      <INPUT id="p6" maxLength=2 class=mvname value="D"> = (<INPUT type="number" id="n16" maxLength=8 class="validate data" value="" onchange=provercainput(this)>, <INPUT type="number" id="n17" maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id="v6" style="display:inline;">, <INPUT type="number" id="n18" maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>)
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="vangl();">Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                    El &aacute;ngulo entre dos vectores que tienen el mismo punto de origen es el menor &aacute;ngulo que se puede rotar uno de los vectores en torno a su origen hasta tener la misma direcci&oacute;n del otro vector.<br/><br/>
+
+                    &Aacute;ngulo entre dos vectores <div class=vector>a</div> y <div class=vector>b</div> se puede hallar con esta f&oacute;rmula:<br/><br/>
+
+                    <center>
+                      <div class="border">
+                        <table style="color:white">
+                          <tr>
+                            <td class=int rowSpan=2>
+                              <div class=formula>cos &alpha; = </div>
+                            </td>
+                            <td class=num>
+                              <div class=vector>a</div> &sdot; <div class=vector>b</div>
+                            </td>
+                          <tr>
+                            <td>
+                              |<div class=vector>a</div>||<div class=vector>b</div>|
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </center>
+
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

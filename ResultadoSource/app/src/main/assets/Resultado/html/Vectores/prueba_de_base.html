@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:1250px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Vectores</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:180px">Prueba de base</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="angulo_entre_vectores.html">A&#769;ngulo entre vectores</a></li>
+                        <li class="divider"></li>
+                        <li><a href="area_de_triangulo.html">A&#769;rea de tria&#769;ngulo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="area_de_paralelogramo.html">A&#769;rea de paralelogramo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="colinealidad.html">Colinealidad</a></li>
+                        <li class="divider"></li>
+                        <li><a href="complanaridad.html">Coplanaridad</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cosenos_directores.html">Cosenos directores</a></li>
+                        <li class="divider"></li>
+                        <li><a href="descomposicion.html">Descomposicio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="modulo_y_longitud.html">Mo&#769;dulo y longitud</a></li>
+                        <li class="divider"></li>
+                        <li><a href="multiplicacion.html">Multiplicacio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="ortogonalidad.html">Ortogonalidad</a></li>
+                        <li class="divider"></li>
+                        <li><a href="prueba_de_base.html">Prueba de base</a></li>
+                        <li class="divider"></li>
+                        <li><a href="producto_escalar.html">Producto escalar</a></li>
+                        <li class="divider"></li>
+                        <li><a href="producto_mixto.html">Producto mixto</a></li>
+                        <li class="divider"></li>
+                        <li><a href="producto_vectorial.html">Producto vectorial</a></li>
+                        <li class="divider"></li>
+                        <li><a href="proyeccion.html">Proyeccio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="suma_y_resto.html">Suma y resto</a></li>
+                        <li class="divider"></li>
+                        <li><a href="vector_dados_puntos.html">Calcular vector con dados puntos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="volumen_de_piramide.html">Volumen de pira&#769;mide</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->                
+
+
+                  <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/matrix_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Vectores/probar_si_forman_una_base.js"></script>      
+
+                  <div id="calculadora" class="col s12">
+
+                    Seleccione el espacio dimensional:<br/><br/>
+
+                    N&uacute;mero de coordenadas:
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3"> 
+                          <select name="vsize" onchange=vhigthwidthA(this.value) class="browser-default">
+                            <option value="2" class="my-option">2</option>
+                            <option value="3" selected="true" class="my-option">3</option>
+                            <option value="4" class="my-option">4</option>
+                          </select>
+                      </div>
+                    </div>
+
+                    Introduzca los valores del vector:<br/><br/>
+
+                    <center>
+                      <div id="m1" >
+                        <table>
+                          <TR>
+                            <TD vAlign=center align=middle><div class="vector">a<sub>1</sub></div> = {</TD><TD><INPUT id="a_1_1" maxLength=8 class="validate data">;</TD><TD><INPUT id="a_2_1" maxLength=8 class="validate data">;</TD><TD><INPUT id="a_3_1" maxLength=8 class="validate data">}</td>
+                          </TR>
+                          <TR>
+                            <TD vAlign=center align=middle><div class="vector">a<sub>2</sub></div> = {</TD><TD><INPUT id="a_1_2" maxLength=8 class="validate data">;</TD><TD><INPUT id="a_2_2" maxLength=8 class="validate data">;</TD><TD><INPUT id="a_3_2" maxLength=8 class="validate data">}</td>
+                          </TR>
+                          <TR>
+                            <TD vAlign=center align=middle><div class="vector">a<sub>3</sub></div> = {</TD><TD><INPUT id="a_1_3" maxLength=8 class="validate data">;</TD><TD><INPUT id="a_2_3" maxLength=8 class="validate data">;</TD><TD><INPUT id="a_3_3" maxLength=8 class="validate data">}</td>
+                          <TR>
+                        </table>
+                      </div>
+                    </center>
+
+                    <br/>
+                    
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="minverse3();">Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

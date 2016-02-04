@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:700px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Geometria</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:250px">Distancia entre planos</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="angulo_entre_planos.html">A&#769;ngulo entre planos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="angulo_entre_recta_y_plano.html">A&#769;ngulo entre recta y plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_plano.html">Distancia de punto a plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_recta.html">Distancia de punto a recta</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_recta_en_plano.html">Distancia de punto a recta en plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_entre_planos.html">Distancia entre planos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="ecuacion_de_plano.html">Ecuacio&#769;n de plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="ecuacion_de_recta.html">Ecuacio&#769;n de recta</a></li>
+                        <li class="divider"></li>
+                        <li><a href="longitud_y_distancia.html">Longitud y distancia</a></li>
+                        <li class="divider"></li>
+                        <li><a href="punto_medio_de_segmento.html">Punto medio de segmento</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->                
+
+                  <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/cart_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Geometria/distancia_entre_planos.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    Ingrese las ecuaciones de los planos:
+
+                    <center>
+
+                      Ecuaci&oacute;n del plano 1<br>
+                      <INPUT type="number" id="n_1" maxLength=8 class="validate data" value=""><div class=formula>x</div> + <INPUT type="number" id="n_2" maxLength=8 class="validate data" value=""><div class=formula>y</div> + <INPUT type="number" id="n_3" maxLength=8 class="validate data" value=""><div class=formula>z</div> + <INPUT type="number" id="n_4" maxLength=8 class="validate data" value=""> = 0 
+
+                      <br>Ecuaci&oacute;n del plano 2:<br>
+                      <INPUT type="number" id="n_5" maxLength=8 class="validate data" value=""><div class=formula>x</div> + <INPUT type="number" id="n_6" maxLength=8 class="validate data" value=""><div class=formula>y</div> + <INPUT type="number" id="n_7" maxLength=8 class="validate data" value=""><div class=formula>z</div> + <INPUT type="number" id="n_8" maxLength=8 class="validate data" value=""> = 0<br>
+
+                    </center>
+
+                    <br/>
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick=qplane_plane()>Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                    La distancia entre dos planos paralelos es igual a la longitud de la perpendicular desde un punto en un plano hasta el otro plano.<br/><br/>
+
+                    Si tenemos ecuaciones de planos paralelos A<div class="formula">x</div>&nbsp;+ B<div class="formula">y</div>&nbsp;+ C<div class="formula">z</div>&nbsp;+&nbsp;D<sub>1</sub>&nbsp;=&nbsp;0 y A<div class="formula">x</div>&nbsp;+ B<div class="formula">y</div>&nbsp;+ C<div class="formula">z</div>&nbsp;+ D<sub>2</sub> = 0, entonces podemos hallar la distancia entre los planos mediante la siguiente f&oacute;rmula:<br/><br/>
+
+                    <center>
+                      <div class="border">
+                        <table align=center style="color:white">
+                          <tr>
+                            <td vAlign=center align=middle rowSpan=2>
+                              <div class=formula>d </div>=&nbsp;
+                            </td>
+                            <td class=num>
+                              |D<sub>2</sub> - D<sub>1</sub>|
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class=denom >
+                              &radic;(<div class=sqrt style="text-decoration: overline">A<sup>2</sup> + B<sup>2</sup> + C<sup>2</sup></div>)
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </center>
+
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>

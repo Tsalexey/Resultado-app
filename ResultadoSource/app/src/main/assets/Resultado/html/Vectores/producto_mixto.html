@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:1250px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Vectores</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:200px">Producto mixto</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="angulo_entre_vectores.html">A&#769;ngulo entre vectores</a></li>
+                        <li class="divider"></li>
+                        <li><a href="area_de_triangulo.html">A&#769;rea de tria&#769;ngulo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="area_de_paralelogramo.html">A&#769;rea de paralelogramo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="colinealidad.html">Colinealidad</a></li>
+                        <li class="divider"></li>
+                        <li><a href="complanaridad.html">Coplanaridad</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cosenos_directores.html">Cosenos directores</a></li>
+                        <li class="divider"></li>
+                        <li><a href="descomposicion.html">Descomposicio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="modulo_y_longitud.html">Mo&#769;dulo y longitud</a></li>
+                        <li class="divider"></li>
+                        <li><a href="multiplicacion.html">Multiplicacio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="ortogonalidad.html">Ortogonalidad</a></li>
+                        <li class="divider"></li>
+                        <li><a href="prueba_de_base.html">Prueba de base</a></li>
+                        <li class="divider"></li>
+                        <li><a href="producto_escalar.html">Producto escalar</a></li>
+                        <li class="divider"></li>
+                        <li><a href="producto_mixto.html">Producto mixto</a></li>
+                        <li class="divider"></li>
+                        <li><a href="producto_vectorial.html">Producto vectorial</a></li>
+                        <li class="divider"></li>
+                        <li><a href="proyeccion.html">Proyeccio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="suma_y_resto.html">Suma y resto</a></li>
+                        <li class="divider"></li>
+                        <li><a href="vector_dados_puntos.html">Calcular vector con dados puntos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="volumen_de_piramide.html">Volumen de pira&#769;mide</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->                
+
+                  <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/vectors_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Vectores/producto_mixto.js"></script>       
+
+                  <div id="calculadora" class="col s12">
+
+                      Forma de los vectores:<br/><br/>
+
+                      Forma del Vector 1:
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3">    
+                            <select name="vform" onchange=vector_ch_show_0(this.value) class="browser-default">
+                              <option value="1" selected="true" class="my-option">Coordenadas</option>
+                              <option value="2" class="my-option">Puntos</option>
+                            </select>
+                      </div>
+                    </div>
+
+                      Forma del Vector 2:
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3">                          
+                            <select name="vform" onchange=vector_ch_show_1(this.value) class="browser-default">
+                              <option value="1" selected="true" class="my-option">Coordenadas</option>
+                              <option value="2" class="my-option">Puntos</option>
+                            </select>
+                      </div>
+                    </div>
+
+                      Forma del Vector 3:
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3">    
+                            <select name="vform" onchange=vector_ch_show_2(this.value) class="browser-default">
+                              <option value="1" selected="true" class="my-option">Coordenadas</option>
+                              <option value="2" class="my-option">Puntos</option>
+                            </select>
+                      </div>
+                    </div>
+
+                      Introduzca los valores de los vectores:<br/><br/>
+
+                      Vector 1
+                      <div id=vect name=vect>
+                        <INPUT id=p1 maxLength=2 class=mvname style="text-decoration:overline" value="a" onchange=vector_ch_name(1,vform,"a","A","B")> = {<INPUT type="number" id=n1 maxLength=8 class="validate data" value="" onchange=provercainput(this)>; <INPUT type="number" id=n2 maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id=v1 style="display:inline;">; <INPUT type="number" id=n3 maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>}
+                      </div>
+
+                      <div id=points name=points style="display: none;  ">
+                        Punto de origen:<br/>
+                        <INPUT id=p2 maxLength=2 class=mvname value="A" onchange=vector_ch_name(1,vform,"a","A","B")> (<INPUT type="number" id=n4 maxLength=8 class="validate data" value="" onchange=provercainput(this)>, <INPUT type="number" id=n5 maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id=v2 style="display:inline;">, <INPUT type="number" id=n6 maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>) 
+                        <br>Punto de destino:<br/>
+                        <INPUT id=p3 maxLength=2 class=mvname value="B" onchange=vector_ch_name(1,vform,"a","A","B")> (<INPUT type="number" id=n7 maxLength=8 class="validate data" value="" onchange=provercainput(this)>, <INPUT type="number" id=n8 maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id=v3 style="display:inline;">, <INPUT type="number" id=n9 maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>)
+                      </div>
+
+                      <br>Vector 2<br/>
+                      <div id=vect1 name=vect1  >
+                        <INPUT id=p4 maxLength=2 class=mvname style="text-decoration:overline" value="b" onchange=vector_ch_name(2,vform1,"b","C","D")> = {<INPUT type="number" id=n10 maxLength=8 class="validate data" value="" onchange=provercainput(this)>; <INPUT type="number" id=n11 maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id=v4 style="display:inline;">; <INPUT type="number" id=n12 maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>}
+                      </div>
+
+                      <div id=points1 name=points1 style="display: none;">
+                        Punto de origen:<br/>
+                        <INPUT id=p5 maxLength=2 class=mvname value="C" onchange=vector_ch_name(2,vform1,"b","C","D")> = (<INPUT type="number" id=n13 maxLength=8 class="validate data" value="" onchange=provercainput(this)>, <INPUT type="number" id=n14 maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id=v5 style="display:inline;">, <INPUT type="number" id=n15 maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>) 
+                        <br>Punto de destino:<br>
+                        <INPUT id=p6 maxLength=2 class=mvname value="D" onchange=vector_ch_name(2,vform1,"b","C","D")> = (<INPUT type="number" id=n16 maxLength=8 class="validate data" value="" onchange=provercainput(this)>, <INPUT type="number" id=n17 maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id=v6 style="display:inline;">, <INPUT type="number" id=n18 maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>)
+                      </div>
+
+                      <br>Vector 3<br/>
+                      <div id=vect2 name=vect2>
+                        <INPUT id=p7 maxLength=2 class=mvname style="text-decoration:overline" value="c" onchange=vector_ch_name(3,vform2,"c","E","F")> = {<INPUT type="number" id=n19 maxLength=8 class="validate data" value="" onchange=provercainput(this)>; <INPUT type="number" id=n20 maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id=v7 style="display:inline;">; <INPUT type="number" id=n21 maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>}
+                      </div>
+
+                      <div id=points2 name=points1 style="display: none;">
+                        Punto de origen:<br>
+                        <INPUT id=p8 maxLength=2 class=mvname value="E" onchange=vector_ch_name(3,vform2,"c","E","F")> = (<INPUT type="number" id=n22 maxLength=8 class="validate data" value="" onchange=provercainput(this)>, <INPUT type="number" id=n23 maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id=v8 style="display:inline;">, <INPUT type="number" id=n24 maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>) 
+                        <br>Punto de destino:<br>
+                        <INPUT id=p9 maxLength=2 class=mvname value="F" onchange=vector_ch_name(3,vform2,"c","E","F")> = (<INPUT type="number" id=n25 maxLength=8 class="validate data" value="" onchange=provercainput(this)>, <INPUT type="number" id=n26 maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id=v9 style="display:inline;">, <INPUT type="number" id=n27 maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>)
+                      </div>
+
+                      <br/>
+                      
+                      <div class="vector" id=vn1>a</div> &sdot; (<div class="vector" id=vn2>b</div> &times; <div class="vector" id="vn3">c</div>)
+
+                    <br/>
+                    <br/>
+                    
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="vmults();">Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                    El producto mixto de vectores es la multiplicaci&oacute;n escalar de un vector <div class="vector">a</div> por el producto vectorial de los vectores <div class="vector">b</div> y <div class="vector">c</div>.<br/><br/>
+
+                    El producto mixto de tres vectores <div class="vector">a</div> = {<div class="formula">a<sub>x</sub></div>&nbsp;;&nbsp;<div class="formula">a<sub>y</sub></div>&nbsp;;&nbsp;<div class="formula">a<sub>z</sub></div>}, <div class="vector">b</div> = {<div class="formula">b<sub>x</sub></div>&nbsp;;&nbsp;<div class="formula">b<sub>y</sub></div>&nbsp;;&nbsp;<div class="formula">b<sub>z</sub></div>} y <div class="vector">c</div> = {<div class="formula">c<sub>x</sub></div>&nbsp;;&nbsp;<div class="formula">c<sub>y</sub></div>&nbsp;;&nbsp;<div class="formula">c<sub>z</sub></div>} en el sistema de coordenadas cartesianas es el escalar cuyo valor se puede calcular de la siguiente manera:<br/><br/>
+
+                    <center>
+                      <div class="border">
+                        <table style="border-collapse: collapse; color:white">
+                          <col style="BORDER-RIGHT: white 1px solid;"><col width=30>
+                          <col width=30><col width=30 style="BORDER-RIGHT: white 1px solid;">
+                            <tr align=center>
+                              <td vAlign=center align=middle rowSpan=3>
+                                <div class="vector">a</div> &sdot; (<div class="vector">b</div> &times; <div class="vector">c</div>)&nbsp;=&nbsp;
+                              </td>
+                              <td>
+                                &nbsp;<div class="formula">a<sub>x</sub></div>&nbsp;
+                              </td>
+                              <td>
+                                &nbsp;<div class="formula">a<sub>y</sub></div>&nbsp;</td><td>&nbsp;<div class="formula">a<sub>z</sub></div>&nbsp;
+                              </td>
+                            </tr>
+                            <tr align=center>
+                              <td>
+                                &nbsp;<div class="formula">b<sub>x</sub></div>&nbsp;
+                              </td>
+                              <td>
+                                &nbsp;<div class="formula">b<sub>y</sub></div>&nbsp;</td><td>&nbsp;<div class="formula">b<sub>z</sub></div>&nbsp;
+                              </td>
+                            </tr>
+                            <tr align=center>
+                              <td>
+                                &nbsp;<div class="formula">c<sub>x</sub></div>&nbsp;
+                              </td>
+                              <td>
+                                &nbsp;<div class="formula">c<sub>y</sub></div>&nbsp;
+                              </td>
+                              <td>
+                                &nbsp;<div class="formula">c<sub>z</sub></div>&nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                      </div>
+                    </center>
+
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

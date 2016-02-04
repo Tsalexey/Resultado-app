@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:700px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Geometria</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:290px">Distancia de punto a recta</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="angulo_entre_planos.html">A&#769;ngulo entre planos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="angulo_entre_recta_y_plano.html">A&#769;ngulo entre recta y plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_plano.html">Distancia de punto a plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_recta.html">Distancia de punto a recta</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_recta_en_plano.html">Distancia de punto a recta en plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_entre_planos.html">Distancia entre planos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="ecuacion_de_plano.html">Ecuacio&#769;n de plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="ecuacion_de_recta.html">Ecuacio&#769;n de recta</a></li>
+                        <li class="divider"></li>
+                        <li><a href="longitud_y_distancia.html">Longitud y distancia</a></li>
+                        <li class="divider"></li>
+                        <li><a href="punto_medio_de_segmento.html">Punto medio de segmento</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->                
+
+                  <script type="text/javascript">  var mwidth=1; var languag="es";  var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/cart_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Geometria/distancia_de_un_punto_a_una_recta.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    Forma de la ecuaci&oacute;n de la recta:
+                    <div class="row">                    
+                      <div class="input-field col s6 offset-s3">
+                        <select id="slline" onchange=slline3(this.value) class="browser-default">
+                          <option value="1" selected="true" class="my-option">can&oacute;nica</option>
+                          <option value="2" class="my-option">param&eacute;trica</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <center>
+                      Introduzca lo siguiente:<br/><br/>
+
+                      Ecuaci&oacute;n de la recta:<br>
+                      <div id="linet1">
+                        <table>
+                          <tr>
+                            <td class="del"><div class=formula>x</div> - <INPUT type="number" id="n4" type='number' maxLength=8 class="validate data" value=""></td>
+                            <td vAlign=center align=middle rowSpan=2>&nbsp;=&nbsp;</td>
+                            <td class="del"><div class=formula>y</div> - <INPUT type="number" id="n5" type='number' maxLength=8 class="validate data" value=""></td>
+                            <td vAlign=center align=middle rowSpan=2>&nbsp;=&nbsp;</td>
+                            <td class="del"><div class=formula>z</div> - <INPUT type="number" id="n6" type='number' maxLength=8 class="validate data" value=""></td>
+                          </tr>
+                          <tr>
+                            <td align=center><INPUT type="number" id="n1" type='number' maxLength=8 class="validate data" value=1></td>
+                            <td align=center><INPUT type="number" id="n2" type='number' maxLength=8 class="validate data" value=1></td>
+                            <td align=center><INPUT type="number" id="n3" type='number' maxLength=8 class="validate data" value=1></td>
+                          </tr>
+                        </table>
+                      </div>
+
+                      <div id="linet2" style="display:none;">
+                        <table>
+                          <tr>
+                            <td rowspan="3"><img src="../../image/SS.png" width="10" height="60"></td>
+                            <td><div class="formula">x</div>=<INPUT type="number" id=n10 type='number' maxLength=8 class="validate data" value=""><div class="formula">t</div>+<INPUT type="number" id=n13 type='number' maxLength=8 class="validate data" value=""></td>
+                          </tr>
+                          <tr>
+                            <td><div class="formula">y</div>=<INPUT type="number" id=n11 type='number' maxLength=8 class="validate data" value=""><div class="formula">t</div>+<INPUT type="number" id=n14 type='number' maxLength=8 class="validate data" value=""></td>
+                          </tr>
+                          <tr>
+                            <td><div class="formula">z</div>=<INPUT type="number" id=n12 type='number' maxLength=8 class="validate data" value=""><div class="formula">t</div>+<INPUT type="number" id=n15 type='number' maxLength=8 class="validate data" value=""></td>
+                          </tr>
+                        </table>
+                      </div>
+
+                      <br /> 
+
+                      Coordenadas del punto:<br> 
+                      M<sub>0</sub>: (<div style="display:inline;"><INPUT type="number" id=n7 type='number' maxLength=8 class="validate data" value="">,<INPUT type="number" id=n8 type='number' maxLength=8 class="validate data" value="">,<INPUT type="number" id=n9 type='number' maxLength=8 class="validate data" value=""></div>)<br>
+                    </center>
+
+                    <br/>
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick=qp_line3()>Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                    La distancia desde un punto a una recta es igual a la longitud de la perpendicular desde el punto hasta la recta.<br/><br/>
+
+                    Si tenemos las coordenadas espaciales del punto M<sub>0</sub> (<div class="formula">x</div><sub>0</sub>, <div class="formula">y</div><sub>0</sub>, <div class="formula">z</div><sub>0</sub>) y sabemos que <div class=vector>s</div> = <div class="formula">{m</div>; <div class="formula">n</div>; <div class="formula">p}</div> es el vector direccional de la recta <div class="formula">l</div>, M1 (<div class="formula">x</div><sub>1</sub>, <div class="formula">y</div><sub>1</sub>, <div class="formula">z</div><sub>1</sub>) son las coordenadas de un punto en <div class="formula">l</div>, entonces podemos hallar la distancia desde el punto M<sub>0</sub> (<div class="formula">x</div><sub>0</sub>, <div class="formula">y</div><sub>0</sub>, <div class="formula">z</div><sub>0</sub>) a la recta <div class="formula">l</div> mediante la f&oacute;rmula:<br/><br/>
+
+                    <center>
+                      <div class="border">
+                        <table align=center style="color:white">
+                            <tr>
+                              <td vAlign=center align=middle rowSpan=2><div class=formula>d </div>=&nbsp;
+                              </td>
+                              <td class="del">
+                                <div style="text-decoration: overline;display:inline;">| M<sub>0</sub> M<sub>1</sub></div>  &times; <div class="vector" style="display:inline">s</div>| 
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align=center>
+                                |<div class="vector" style="display:inline">s</div>|
+                              </td>
+                            </tr>
+                        </table>
+                      </div>
+                    </center>
+
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>

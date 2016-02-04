@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:1250px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Vectores</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:340px">Calcular vector con dados puntos</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="angulo_entre_vectores.html">A&#769;ngulo entre vectores</a></li>
+                        <li class="divider"></li>
+                        <li><a href="area_de_triangulo.html">A&#769;rea de tria&#769;ngulo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="area_de_paralelogramo.html">A&#769;rea de paralelogramo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="colinealidad.html">Colinealidad</a></li>
+                        <li class="divider"></li>
+                        <li><a href="complanaridad.html">Coplanaridad</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cosenos_directores.html">Cosenos directores</a></li>
+                        <li class="divider"></li>
+                        <li><a href="descomposicion.html">Descomposicio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="modulo_y_longitud.html">Mo&#769;dulo y longitud</a></li>
+                        <li class="divider"></li>
+                        <li><a href="multiplicacion.html">Multiplicacio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="ortogonalidad.html">Ortogonalidad</a></li>
+                        <li class="divider"></li>
+                        <li><a href="prueba_de_base.html">Prueba de base</a></li>
+                        <li class="divider"></li>
+                        <li><a href="producto_escalar.html">Producto escalar</a></li>
+                        <li class="divider"></li>
+                        <li><a href="producto_mixto.html">Producto mixto</a></li>
+                        <li class="divider"></li>
+                        <li><a href="producto_vectorial.html">Producto vectorial</a></li>
+                        <li class="divider"></li>
+                        <li><a href="proyeccion.html">Proyeccio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="suma_y_resto.html">Suma y resto</a></li>
+                        <li class="divider"></li>
+                        <li><a href="vector_dados_puntos.html">Calcular vector con dados puntos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="volumen_de_piramide.html">Volumen de pira&#769;mide</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->                
+
+                  <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/vectors_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Vectores/vector_dados_dos_puntos.js"></script>     
+
+                  <div id="calculadora" class="col s12">
+
+                    Seleccione la dimensi&oacute;n del espacio vectorial:<br/><br/>
+                   
+                    Dimensi&oacute;n del espacio vectorial
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3">  
+                          <select name="vsize" onchange=select2_3(this.value,2) class="browser-default">
+                            <option value="2" class="my-option">2</option>
+                            <option value="3" selected="true" class="my-option">3</option>
+                          </select>
+                      </div>
+                    </div>
+
+                    Introduzca las coordenadas de los puntos de origen y destino del vector:<br/><br/>
+
+                    <div id="points">
+                      Punto de origen:<br>
+                      <INPUT id=p1 maxLength=2 class=mvname value=A onchange=p_to_v_changename(1,this.value)> = (<INPUT type="number" id=n1 maxLength=8 class="validate data" value="" onchange=provercainput(this)>, <INPUT type="number" id=n2 maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id=v1 style="display:inline;">, <INPUT type="number" id=n3 maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>)
+                      <br>Punto de destino<br>
+                      <INPUT id=p2 maxLength=2 class=mvname value=B onchange=p_to_v_changename(2,this.value)> = (<INPUT type="number" id=n4 maxLength=8 class="validate data" value="" onchange=provercainput(this)>, <INPUT type="number" id=n5 maxLength=8 class="validate data" value="" onchange=provercainput(this)><div id=v2 style="display:inline;">, <INPUT type="number" id=n6 maxLength=8 class="validate data" value="" onchange=provercainput(this)></div>)
+
+                    </div>
+
+                    <br/>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="p_to_v_calk();">Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                    Calcular un vector dados dos puntos<br/><br/>
+
+                    Para hallar las coordenadas del vector <span style="text-decoration: overline">AB</span>, dado su punto de origen A y su extremo B, necesitamos calcular las coordinadas del punto de origen a partir de las correspondientes coordenadas del punto de destino.<br/>
+
+                    Por ejemplo, el vector <span style="text-decoration: overline">AB</span> definido en el espacio por las coordenadas de los puntos A (A<div class="formula"><sub>x</sub></div>,&nbsp;A<div class="formula"><sub>y</sub></div>,&nbsp;A<div class="formula"><sub>z</sub></div>) y B (B<div class="formula"><sub>x</sub></div>,&nbsp;B<div class="formula"><sub>y</sub></div>,&nbsp;B<div class="formula"><sub>z</sub></div>) se puede hallar con estas f&oacute;rmulas:<br/><br/>
+
+                    <center>
+                    <div class="border">
+                        <span style="text-decoration: overline">AB</span> = {B<div class="formula"><sub>x</sub></div> - A<div class="formula"><sub>x</sub></div>; B<div class="formula"><sub>y</sub></div> - A<div class="formula"><sub>y</sub></div>; B<div class="formula"><sub>z</sub></div> - A<div class="formula"><sub>z</sub></div>}
+                      </div>
+                    </center>
+
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

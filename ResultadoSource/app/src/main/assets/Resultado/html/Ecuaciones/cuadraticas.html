@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Ecuaciones</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:150px">Cuadraticas</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="bicuadradas.html">Bicuadradas</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cuadraticas.html">Cuadraticas</a></li>
+                        <li class="divider"></li>
+                        <li><a href="matrices.html">Matrices</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cramer.html">Metodo de Cra&#769;mer</a></li>
+                        <li class="divider"></li>
+                        <li><a href="gaus.html">Metodo de Ga&#769;us</a></li>
+                         <li class="divider"></li>
+                        <li><a href="sustituciones.html">Metodo de sustituciones</a></li>                       
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->  
+                            
+                  <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/uravnen_special_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Ecuaciones/cuadratica.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    <div class="row">
+                      Introduzca los coeficientes de la ecuaci&oacute;n:<br/><br/>
+                      <div class="input-field col s6 offset-s3">
+                        <input id="ae" type="number" class="validate data" maxLength="12" name="n1"> 
+                        <b>x</b> <sup>2</sup> &nbsp;+&nbsp;
+                        <input id="be" type="number" class="validate data" maxLength="12" name="n1"> 
+                        <b>x</b> &nbsp;+&nbsp;
+                        <input id="ce" type="number" class="validate data" maxLength="12" name="n1"> 
+                         = 0
+                      </div>    
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="solve_qe();">Resolver</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                    Una ecuaci&oacute;n cuadr&aacute;tica es una ecuaci&oacute;n con la siguiente forma <b>a x</b><sup>2</sup> + <b>b x</b> + <b>c</b> = 0, donde <b>a</b> es distinto de 0.<br/><br/>
+
+                    Resolver una ecuaci&oacute;n cuadr&aacute;tica significa encontrar los valores de <b>x<sub>i</sub></b> que satisfacen la igualdad <b>a x<sub>i</sub></b><sup>2</sup> + <b>b x<sub>i</sub></b> + <b>c</b> = 0.<br/><br/>
+
+                    Para resolver una ecuaci&oacute;n cuadr&aacute;tica, calcule el discriminante del polinomio<br>
+                    D = <b>b</b><sup>2</sup> - 4 <b>a c</b>.
+
+                    <ul><li> Si D &gt; 0, la ecuaci&oacute;n tiene dos ra&iacute;ces reales distintas.</li>
+                    <li>Si D = 0, la ecuaci&oacute;n tiene una &uacute;nica ra&iacute;z (<b>x</b><sub>1</sub> = <b>x</b><sub>2</sub>).</li>
+
+                    <li> Si D &gt;&lt;0, la ecuaci&oacute;n no tiene ra&iacute;ces reales.</li>
+                    </ul><br>Para hallar las ra&iacute;ces de una ecuaci&oacute;n cuadr&aacute;tica (<B>resolver la ecuaci&oacute;n cuadr&aacute;tica</B>), use la siguiente f&oacute;rmula
+
+                    <div class="valign-wrapper">
+                        <table style="TEXT-ALIGN: center;" cellSpacing=5 cellPadding=5 width=330 align=center border=0 >
+                          <tr>
+                            <td vAlign=center align=middle>
+                              <table cellSpacing=0 cellPadding=0 border=0>
+                              <tr>
+                                <td vAlign=center align=middle rowSpan=2 style="color: white;">
+                                  <div class=formula>x</div><sub>1,2</sub> =&nbsp;
+                                </td>     
+                                <td style="border-bottom-style:solid; TEXT-ALIGN: center;   color: white;">
+                                  -<div class=formula>b</div> &plusmn; &radic;<span style="text-decoration:overline;">D</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="TEXT-ALIGN: center;  color: white;">
+                                  2 <div class=formula>a</div>
+                                </td>
+                              </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                    </div>
+
+                  </div> 
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

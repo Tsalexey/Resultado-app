@@ -1,0 +1,23 @@
+
+	var mah=3;
+	var maw=3;
+	var ls="../../image/LS.GIF";
+	var rs="../../image/RS.GIF";
+	var ls1="../../image/SS.png";
+	var j1="Asegu&#769;rese de haber introducido la expresio&#769;n correctamente, y de haber completado todos los campos. Puede introducir nu&#769;meros o fracciones."
+	var j2="<br />Divida la ecuacio&#769;n {i} por {n} y exprese x<sub>{k}</sub> en funcio&#769;n de las variables restantes<br />"
+	var j3="<br />Intercambie las posiciones de la ecuación {i} con la ecuacio&#769;n {j}<br />"
+	var j4="<br />Exprese x<sub>{k}</sub> mediante las variables restantes "
+	var j5="<br />En la ecuacio&#769;n {n}, sustituimos en x<sub>{k}</sub><br />"
+	var j6=" "
+	var j7=" "
+	var j8=" "
+	var j9="<br />despue&#769;s de simplificar, obtenemos:<br />"
+	var j10="Resuelva el sistema de ecuaciones"
+	var j11="<br />Simplifique el sistema:<br />"
+	var j12="&ne;"
+	var j13="<br />El sistema de ecuaciones no tiene soluciones, ya que:<br />"
+	var j14="<br /><b>Respuesta:</b>"
+	var j15=" "
+	var j16=" "
+	var j17="<br />Ahora, despejando las inco&#769;gnitas desde la u&#769;ltima ecuacio&#769;n hacia la primera, podemos encontrar los valores  de las variables restantes.<br>"

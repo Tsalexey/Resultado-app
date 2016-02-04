@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Resultado</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2031525378528444/2029771014</string>
+
+    <string name="drawer_item_inicio">Inicio</string>
+    <string name="drawer_item_area">Area</string>
+    <string name="drawer_item_area_de_superficie">Area de superficie</string>
+    <string name="drawer_item_combinatoria">Combinatoria</string>
+    <string name="drawer_item_convertidores">Convertidores</string>
+    <string name="drawer_item_ecuaciones">Ecuaciones</string>
+    <string name="drawer_item_estadistica">Estadistica</string>
+    <string name="drawer_item_formulas">Formulas</string>
+    <string name="drawer_item_fracciones">Fracciones</string>
+    <string name="drawer_item_geometria">Geometria</string>
+    <string name="drawer_item_matrices">Matrices</string>
+    <string name="drawer_item_numeros_complejos">Numeros complejos</string>
+    <string name="drawer_item_perimetro">Perimetro</string>
+    <string name="drawer_item_porcentaje">Porcentaje</string>
+    <string name="drawer_item_progresiones">Progreciones</string>
+    <string name="drawer_item_tablas">Tablas</string>
+    <string name="drawer_item_teoria_de_numeros">Teoria de numeros</string>
+    <string name="drawer_item_trigonometria">Trigonometria</string>
+    <string name="drawer_item_vectores">Vectores</string>
+    <string name="drawer_item_volumen">Volumen</string>
+
+</resources>

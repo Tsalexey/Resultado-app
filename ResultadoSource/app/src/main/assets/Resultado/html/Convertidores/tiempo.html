@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Convertidores</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:150px">Tiempo</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="area.html">A&#769;rea</a></li>
+                        <li class="divider"></li>
+                        <li><a href="longitud.html">Longitud</a></li>
+                        <li class="divider"></li>
+                        <li><a href="masa.html">Masa</a></li>
+                        <li class="divider"></li>
+                        <li><a href="tiempo.html">Tiempo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="velocidad.html">Velosidad</a></li>
+                        <li class="divider"></li>
+                        <li><a href="volumen.html">Volumen</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->  
+            
+                  <script type="text/javascript"> var mwidth=1; var ct=1; var j1="J1"; </script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/convertors_prog.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                   <div class="row">
+                      Seleccione la unidad de medida del valor original e introduzca el n&uacute;mero que desea convertir:<br/><br/>
+                      <div class="input-field col s6 offset-s3">
+                        <input id="inp" class="validate data" type='number' maxLength=15 value="" oninput=ctinput()>
+                      </div>
+                    </div>
+
+                     <div class="row">                    
+                      <div class="input-field col s6 offset-s3">                   
+                          <select name="cht" onchange="ctchang(this.value)" class="browser-default">
+                            <option value="1" selected="true" class="my-option">segundos</option>
+                            <option value="2" class="my-option">minutos</option>
+                            <option value="3" class="my-option">horas</option>
+                            <option value="4" class="my-option">d&iacute;as</option>
+                            <option value="5" class="my-option">semanas</option>
+                          </select>           
+                      </div>   
+                    </div>
+
+                    <div class="row">
+                      Respuesta:<br />
+
+                      <div class="valign-wrapper">     
+                          <table align="center">
+                            <tr id="sek" style="display:none;">
+                              <td id="sek1" align="right">0</td><td>segundos</td>
+                            </tr>
+                            <tr id="min">
+                              <td id="min1" align="right">0</td><td>minutos</td>
+                            </tr>
+                            <tr id="cas">
+                              <td id="cas1" align="right">0</td><td>horas</td>
+                            </tr>
+                            <tr id="den">
+                              <td id="den1" align="right">0</td><td>d&iacute;as</td>
+                            </tr>
+                            <tr id="ned">
+                              <td id="ned1" align="right">0</td><td>semanas</td>
+                            </tr>
+                          </table>
+                    </div>     
+
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+ 
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

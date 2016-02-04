@@ -1,0 +1,130 @@
+o<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Fo&#769;rmulas</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:250px">Progresio&#769;n geometrica</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="potencias.html">Potencias</a></li>
+                        <li class="divider"></li>
+                        <li><a href="logaritmos.html">Logaritmos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="multiplicacion.html">Formulas de multiplicacio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="progresion_aritmetica.html">Progresio&#769;n aritmetica</a></li>
+                        <li class="divider"></li>
+                        <li><a href="progresion_geometrica.html">Progresio&#769;n geometrica</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">                       
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->                
+
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+
+                      Una progresi&oacute;n geom&eacute;trica es una secuencia de n&uacute;meros. <div class=formula>b</div><sub>1</sub>, <div class=formula>b</div><sub>2</sub>, <div class=formula>b</div><sub>3</sub>, ..., en la cual cada t&eacute;rmino, empezando por el segundo, es igual al t&eacute;rmino anterior multiplicado por cierta constante <div class=formula>q</div> (la raz&oacute;n), donde <div class=formula>b</div><sub>1</sub> &ne; 0, <div class=formula>q</div> &ne; 0. 
+
+                      <br/><br/>
+
+                      <center>
+
+                        <b>T&eacute;rmino <div class=formula>n</div> de una progresi&oacute;n geom&eacute;trica</b><br/>
+                          <div class="border">      
+                            <div class=formula>b<sub>n</sub></div> = <div class=formula>b</div><sub>1</sub> &sdot; <div class=formula>q</div><sup><div class=formula>n</div> - 1</sup> <br/>
+                            <div class=formula>b<sub>n</sub></div> = <div class=formula>b</div><sub><div class=formula>n</div> - 1</sub> &sdot; <div class=formula>q</div>
+                          </div>
+
+                        <br/><br>
+
+                        <b>Raz&oacute;n de una progresi&oacute;n geom&eacute;trica</b><br/>
+                          <div class="border">    
+                            <table cellSpacing=0 cellPadding=0 border=0 style="color:white"><tbody><tr>
+                            <td vAlign=center align=middle rowSpan=2><div class=formula>q</div> =&nbsp;</td>
+                            <td class="del"><div class=formula>b<sub>n</sub></div></td></tr><rt><td style="TEXT-ALIGN: center;"><div class=formula>b</div><sub><div class=formula>n</div> - 1</sub></td></tr></tbody>
+                            </table>
+                          </div>
+
+                        <br/><br/>
+
+                        <b>F&oacute;rmulas para la suma de una progresi&oacute;n geom&eacute;trica</b><br/>
+                          <div class="border">      
+                            <table cellSpacing=0 cellPadding=0 border=0 style="color:white"><tbody><tr>
+                            <td vAlign=center align=middle rowSpan=2><div class=formula>S<sub>n</sub></div> =&nbsp;</td>
+                            <td class="del"><div class=formula>b</div><sub>1</sub> - <div class=formula>b</div><sub><div class=formula>n</div> + 1</sub></td></tr><rt><td style="TEXT-ALIGN: center;">1 - <div class=formula>q</div></td></tr></tbody>
+                            </table>
+
+                            <br>
+
+                            <table cellSpacing=0 cellPadding=0 border=0 style="color:white"><tbody><tr>
+                            <td vAlign=center align=middle rowSpan=2><div class=formula>S<sub>n</sub></div> = <div class=formula>b</div><sub>1</sub> &sdot;&nbsp;</td>
+                            <td class="del">1 - <div class=formula>q<sup>n</sup></div></td>
+                            </tr><rt><td style="TEXT-ALIGN: center;">1 - <div class=formula>q</div></td></tr></tbody>
+                            </table>
+                          </div>
+
+                        <br/><br/>
+
+                        <b>Propiedad de una progresi&oacute;n geom&eacute;trica</b><br/>
+                          <div class="border">
+                            <div class=formula>b<sub>n</sub></div><sup>2</sup> = <div class=formula>b</div><sub><div class=formula>n</div> + 1</sub> &sdot; <div class=formula>b</div><sub><div class=formula>n</div> - 1</sub>
+                          </div>
+
+                        <br/><br>
+
+                        <b>Suma de una progresi&oacute;n geom&eacute;trica infinita</b><br> Si |<div class=formula>q</div>| &lt; 1 entonces como <div class=formula>n</div> &rarr; &infin; <br/>
+                          <div class="border">
+                            <table cellSpacing=0 cellPadding=0 border=0 style="color:white"><tbody><tr>
+                            <td vAlign=center align=middle rowSpan=2><div class=formula>S<sub>n</sub></div> =&nbsp;</td>
+                            <td class="del"><div class=formula>b</div><sub>1</sub></td></tr><rt><td style="TEXT-ALIGN: center;">1 - <div class=formula>q</div></td></tr></tbody></table>
+                          </div>
+                        </tbody>
+
+                      </center>
+
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

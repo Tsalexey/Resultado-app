@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Volumen</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:200px">Pira&#769;mide</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="cilindro.html">Cilindro</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cono.html">Cono</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cubo.html">Cubo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="esfera.html">Esfera</a></li>
+                        <li class="divider"></li>
+                        <li><a href="paralelepipedo.html">Paralelepi&#769;pedo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="paralelepipedo_recto.html">Paralelepi&#769;pedo recto</a></li>
+                        <li class="divider"></li>
+                        <li><a href="piramide.html">Pira&#769;mide</a></li>
+                        <li class="divider"></li>
+                        <li><a href="prisma.html">Prisma</a></li>
+                        <li class="divider"></li>
+                        <li><a href="tetraedro.html">Tetraedro</a></li>                        
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR --> 
+
+                  <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/obyem_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Volumen/piramide.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    Introduzca la altura y el &aacute;rea de la base de la pir&aacute;mide:<br/><br/>
+
+                    <div class="row">   
+                      <div class="input-field col s6 offset-s3">                                        
+                        h = <INPUT  id=n1 class="validate data" type='number' maxLength=12 size=10>
+                      </div>
+                    </div>
+                    <div class="row">   
+                      <div class="input-field col s6 offset-s3">                                        
+                        S<sub>о</sub> = <INPUT type="number" id=n2 class="validate data" type='number' maxLength=12 size=10>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="vpyramid();">Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+
+                  <center><img src="../../image/piramide.png" alt="Pir&aacute;mide"/></center>
+
+                  Una pir&aacute;mide es un poliedro de base poligonal y cuyas otras caras son tri&aacute;ngulos con un v&eacute;rtice com&uacute;n (el &aacute;pice).<br/><br/>
+
+                  El volumen de una pir&aacute;mide es igual a un tercio del producto de su base por la altura.<br/><br/>
+
+                  <b>F&oacute;rmula para calcular el volumen de una pir&aacute;mide:</b> <br/><br/>
+
+                  <center>
+                    <div class="border">
+                      <table align=center style="color:white">
+                        <tr>
+                          <td vAlign=center align=middle rowSpan=2>
+                            V =&nbsp;
+                          </td>
+                          <td style="BORDER-BOTTOM: white 1px solid; TEXT-ALIGN: center;">
+                            S<sub>o</sub> &sdot; h
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align=center>
+                            3
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </center>
+
+                  <br>
+
+                   donde <b>V</b> es el volumen de la pir&aacute;mide,  <b>S<sub>o</sub></b> es el &aacute;rea de la base de la pir&aacute;mide, y <b>h</b> es la altura de la pir&aacute;mide.
+
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>

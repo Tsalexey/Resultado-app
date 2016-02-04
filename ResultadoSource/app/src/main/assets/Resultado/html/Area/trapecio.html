@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>A&#769;rea</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:150px">Trapecio</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="circulo.html">Ci&#769;rculo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cuadrado.html">Cuadrado</a></li>
+                        <li class="divider"></li>
+                        <li><a href="elipse.html">Elipse</a></li>
+                        <li class="divider"></li>
+                        <li><a href="paralelogramo.html">Paralelogramo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="rectangulo.html">Recta&#769;ngulo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="rombo.html">Rombo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="trapecio.html">Trapecio</a></li>
+                        <li class="divider"></li>
+                        <li><a href="triangulo.html">Tria&#769;ngulo</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->                 
+                    <script type="text/javascript" src="../../Scripts/area_prog.js"></script>
+                    <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                    <script type="text/javascript" src="../../Scripts/Area/trapecio.js"></script>
+                    <script type="text/javascript" src="../../Scripts/Area/common.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    <div class="row">
+                      Introduzca  las longitudes de las bases  y la altura de trapecio: <br/><br/>
+                      <div class="input-field col s6 offset-s3">
+                        <div id="st1" style="display:inline;">a =</div> 
+                        <input id="n1" type="number" class="validate data" maxLength="12" name="n1">              
+                      </div>   
+                    </div>
+                    <div class="row">                    
+                      <div class="input-field col s6 offset-s3">
+                        <div id="st2" style="display:inline;">b =</div>
+                        <input id="n2" type="number" class="validate data" maxLength="12" name="n2">
+                      </div>
+                    </div>
+                    <div class="row">                    
+                      <div class="input-field col s6 offset-s3">
+                        <div id="st3" style="display:inline;">h =</div>
+                        <input id="n3" type="number" class="validate data" maxLength="12" name="n3">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="strapezium();">Hallar area</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                    <center><img  src="../../image/trapecio.png" alt="Trapecio"/></center>
+                    Un trapecio es una cuadril&aacute;tero en el cual un par de lados opuestos son paralelos.<br/>
+
+                    
+                    <b>F&oacute;rmulas para calcular el &aacute;rea de un trapecio:</b><br/> 
+               
+                    <div class="valign-wrapper">
+                      <table align=center style="color:white">
+                        <tr>
+                          <td vAlign=center align=middle rowSpan=2>
+                            S =&nbsp;
+                          </td>
+                          <td class="del">
+                            (<b>a</b> + <b>b</b>) &sdot; <b>h</b>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align=center>
+                            2
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    donde <b>S</b> es el &aacute;rea del trapecio, <b>a, b</b> son las longitudes de las bases del trapecio, y <b>h</b> es la altura del trapecio. 
+
+                  </div> 
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Peri&#769;metro</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:180px">Recta&#769;ngulo</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="circulo.html">Ci&#769;rculo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cuadrado.html">Cuadrado</a></li>
+                        <li class="divider"></li>
+                        <li><a href="paralelogramo.html">Paralelogramo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="rectangulo.html">Recta&#769;ngulo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="rombo.html">Rombo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="trapecio.html">Trapecio</a></li>
+                        <li class="divider"></li>
+                        <li><a href="triangulo.html">Tria&#769;ngulo</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->   
+
+                  <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/perimetr_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Perimetro/rectangulo.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    Introduzca las longitudes de los lados del rect&aacute;ngulo:<br/><br/>
+
+                    <div class="row">   
+                      <div class="input-field col s6 offset-s3">                                        
+                          a = <INPUT type="number" id=n1  type='number' maxLength=12 size=10 class="validate data">
+                      </div>
+                    </div>
+
+                    <div class="row">   
+                      <div class="input-field col s6 offset-s3">                                        
+                          b = <INPUT type="number" id=n2  type='number' maxLength=12 size=10 class="validate data">
+                      </div>
+                    </div>
+
+                  <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="prect();">Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+
+                   
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                      <center><img  width=200px src="../../image/rectangulo.png" alt="Rect&aacute;ngulo"/></center>
+
+                      Un rect&aacute;ngulo es un cuadril&aacute;tero en el cual todos los &aacute;ngulos son rectos. El tama&ntilde;o del rect&aacute;ngulo ABCD depende de las longitudes de sus lados <b>a</b> y <b>b</b>. <br> <br> 
+
+                      El per&iacute;metro del rect&aacute;ngulo ABCD es igual al doble de la suma de las longitudes de los lados que convergen en un &uacute;nico v&eacute;rtice <br/><br/>
+
+                           P = 2(a + b)
+
+                      
+                      <br/><br/>
+
+                      donde P es el per&iacute;metro del rect&aacute;ngulo,  <b>a</b> es la longitud del primer lado, y  <b>b</b> es la longitud del segundo lado.
+
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>

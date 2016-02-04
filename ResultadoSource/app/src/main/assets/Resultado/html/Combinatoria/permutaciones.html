@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Combinatoria</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:180px">Permutaciones</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="combinaciones.html">Combinaciones</a></li>
+                        <li class="divider"></li>
+                        <li><a href="permutaciones.html">Permutaciones</a></li>
+                        <li class="divider"></li>
+                        <li><a href="variaciones.html">Variaciones</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->  
+            
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/statistic.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Combinatoria/permutaciones.js"></script>
+                  <script type="text/javascript">var mwidth=1;var languag="es";var RResh="Solucio&#769;n:";</script>
+
+                  <div id="calculadora" class="col s12">
+
+                  <div class="row">
+                       Introduzca un n&uacute;mero:<br/> 
+                     <div class="input-field col s6 offset-s3">
+                        <div class="formula" id="st1">n</div> = 
+                        <input placeholder="" id="c1" class="validate data" type='number' maxLength="12" size="10">                   
+                     </div>                     
+                  </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="permutation();">Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                    N&uacute;mero de permutaciones: <b>P<sub>n</sub></b> es la cantidad de formas posibles en que es posible ordenar un conjunto de <b>n</b> elementos.<br/> 
+
+                    <b>F&oacute;rmula para calcular el n&uacute;mero de permutaciones de <i>n</i> elementos.</b><br/> 
+                                              
+                    P<sub>n</sub> = <b>n</b>!
+
+                  </div> 
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

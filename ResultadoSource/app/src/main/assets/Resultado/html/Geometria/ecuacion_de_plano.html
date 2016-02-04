@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:700px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Geometria</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:220px">Ecuacio&#769;n de plano</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="angulo_entre_planos.html">A&#769;ngulo entre planos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="angulo_entre_recta_y_plano.html">A&#769;ngulo entre recta y plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_plano.html">Distancia de punto a plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_recta.html">Distancia de punto a recta</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_recta_en_plano.html">Distancia de punto a recta en plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_entre_planos.html">Distancia entre planos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="ecuacion_de_plano.html">Ecuacio&#769;n de plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="ecuacion_de_recta.html">Ecuacio&#769;n de recta</a></li>
+                        <li class="divider"></li>
+                        <li><a href="longitud_y_distancia.html">Longitud y distancia</a></li>
+                        <li class="divider"></li>
+                        <li><a href="punto_medio_de_segmento.html">Punto medio de segmento</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->                
+
+                    <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/cart_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Geometria/ecuacion_de_un_plano.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    Seleccione c&oacute;mo resolver en base a la informaci&oacute;n dada:
+
+                    &iquest;De qu&eacute; informaci&oacute;n dispone?:
+
+                    <div class="row">                     
+                      <div class="input-field col s6 offset-s3"> 
+                        <select id="pt" onchange=pplanet(this.value) class="browser-default">
+                          <option value="1" selected="true" class="my-option">las coordenadas de tres puntos del plano.</option>
+                          <option value="2" class="my-option">las coordenadas de un vector normal y un punto en el plano.</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <center>
+
+                      Introduzca lo siguiente:<br/>
+
+                      <TABLE>
+                        <tr id="v1">
+                          <td>
+                            A: (<div style="display:inline;"><INPUT type="number" id="n1" type='number' maxLength=8 class="validate data">,<INPUT type="number" id="n2" type='number' maxLength=8 class="validate data">,<INPUT type="number" id=n3 type='number' maxLength=8 class="validate data"></div>)
+                            </td>
+                        </tr>
+                        <tr id="v2">
+                          <td>
+                            B: (<div style="display:inline;"><INPUT type="number" id="n4" type='number' maxLength=8 class="validate data">,<INPUT type="number" id="n5" type='number' maxLength=8 class="validate data">,<INPUT type="number" id=n6 type='number' maxLength=8 class="validate data"></div>)
+                          </td>
+                        </tr>
+                        <tr id="v3">
+                          <td>
+                            C: (<div style="display:inline;"><INPUT type="number" id="n7" type='number' maxLength=8 class="validate data">,<INPUT type="number" id="n8" type='number' maxLength=8 class="validate data">,<INPUT type="number" id=n9 type='number' maxLength=8 class="validate data"></div>)
+                          </td>
+                        </tr>
+                        <tr id="v4" style="display:none;">
+                          <td>
+                            <div class="vector">n</div>=<div style="display:inline;">{<INPUT type="number" id="n10" type='number' maxLength=8 class="validate data">,<INPUT type="number" id="n11" type='number' maxLength=8 class="validate data">,<INPUT type="number" id="n12" type='number' maxLength=8 class="validate data"></div>}
+                          </td>
+                        </tr>
+                      </table>
+
+                    </center>
+
+                    <br/>
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick=qplane()>Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                    Un plano es la superficie que contiene completamente cada recta que conecta a cualquiera de sus puntos.<br/><br/>
+
+                    Dependiendo de las circunstancias, se puede hallar la ecuaci&oacute;n de un plano mediante los siguientes m&eacute;todos:<br/><br/>
+
+                    Si se conocen las coordenadas de tres puntos: <div class="formula">A(x<sub>1</sub>,y<sub>1</sub>, z<sub>1</sub>), B(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) y C(x<sub>3</sub>,y<sub>3</sub>,z<sub>3</sub>),</div> que forman parte de dicho plano, entonces la ecuaci&oacute;n del plano se puede hallar mediante la siguiente f&oacute;rmula:
+                    <br/><br/>
+
+                    <center>
+                      <div class="border">
+                        <table align=center style="border-collapse: collapse; color:white">
+                          <col style="BORDER-LEFT: white 1px solid;">
+                          <col width=10px><col>
+                          <col width=10px>
+                          <col style="BORDER-RIGHT: white 1px solid;">
+                          <col>
+
+                            <tr align=center>
+                              <td><div class="formula">x</div>&nbsp;-&nbsp;<div class="formula">x</div><sub>1</sub></td><td></td><td><div class="formula">y</div>&nbsp;-&nbsp;<div class="formula">y</div><sub>1</sub></td><td></td><td><div class="formula">z</div>&nbsp;-&nbsp;<div class="formula">z</div><sub>1</sub></td>
+                              <td vAlign=center align=middle rowSpan=3>&nbsp;= 0</td>
+                            </tr>
+                            <tr align=center>
+                              <td><div class="formula">x</div><sub>2</sub>&nbsp;-&nbsp;<div class="formula">x</div><sub>1</sub></td><td></td><td><div class="formula">y</div><sub>2</sub>&nbsp;-&nbsp;<div class="formula">y</div><sub>1</sub></td><td></td><td><div class="formula">z</div><sub>2</sub>&nbsp;-&nbsp;<div class="formula">z</div><sub>1</sub></td>
+                            </tr>
+                            <tr align=center>
+                              <td><div class="formula">x</div><sub>3</sub>&nbsp;-&nbsp;<div class="formula">x</div><sub>1</sub></td><td></td><td><div class="formula">y</div><sub>3</sub>&nbsp;-&nbsp;<div class="formula">y</div><sub>1</sub></td><td></td><td><div class="formula">z</div><sub>3</sub>&nbsp;-&nbsp;<div class="formula">z</div><sub>1</sub></td>
+                            </tr>
+                        </table>
+                      </div>
+                    </center>
+
+                    <br/>
+
+                    Si tenemos coordenadas para el punto A(<div class="formula">x</div><sub>1</sub>, <div class="formula">y</div><sub>1</sub>, <div class="formula">z</div><sub>1</sub>) sobre un plano y el vector normal <div class="vector" style="display:inline">n</div> = {A; B; C}, entonces la ecuaci&oacute;n del plano se puede hallar mediante la siguiente f&oacute;rmula: 
+
+                    <br/><br/>
+
+                    <center>
+                      <div class="border">
+                        <div align=center>A(<div class="formula">x</div> - <div class="formula">x</div><sub>1</sub>) + B(<div class="formula">y</div> - <div class="formula">y</div><sub>1</sub>) + C(<div class="formula">z</div> - <div class="formula">z</div><sub>1</sub>) = 0</div>
+                       </div>
+                    </center>
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>

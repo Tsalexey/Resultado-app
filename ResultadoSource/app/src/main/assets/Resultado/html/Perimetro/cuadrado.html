@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Peri&#769;metro</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:150px">Ci&#769;rculo</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="circulo.html">Ci&#769;rculo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cuadrado.html">Cuadrado</a></li>
+                        <li class="divider"></li>
+                        <li><a href="paralelogramo.html">Paralelogramo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="rectangulo.html">Recta&#769;ngulo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="rombo.html">Rombo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="trapecio.html">Trapecio</a></li>
+                        <li class="divider"></li>
+                        <li><a href="triangulo.html">Tria&#769;ngulo</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->   
+
+                  <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/perimetr_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Perimetro/cuadrado.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                  Seleccione los datos conocidos:<br/><br/>
+
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3">
+                          <select id="vform" onchange=c_sc(this.value) class="browser-default">
+                              <option value="1" selected="true" class="my-option">largo del lado del cuadrado</option>
+                              <option value="2" class="my-option">largo de la diagonal del cuadrado</option>
+                          </select>      
+                      </div>   
+                    </div>
+
+                    Introduzca la longitud del <div style="display:inline;" id="st">lado</div> cuadrado:<br/><br/>
+
+                    <div class="row">   
+                      <div class="input-field col s6 offset-s3">                                        
+                          a = <INPUT type="number" id=n1  type='number' maxLength=12 size=10 class="validate data">
+                      </div>
+                    </div>
+
+                  <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="psquare();">Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+
+                   
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                      <center><img width=200px src="../../image/cuadrado.png" alt="Cuadrado"/></center>
+
+                      Un cuadrado es una cuadril&aacute;tero regular en el cual todos los lados y &aacute;ngulos son iguales.<br/><br/>
+
+                      <b>F&oacute;rmulas para calcular el per&iacute;metro de un cuadrado:</b><br/><br/>
+
+                    El per&iacute;metro de un cuadrado es igual al cuatro veces la longitud de uno de sus lados.<br/>
+
+                          P = 4a
+
+                      <br><br>
+
+                      El per&iacute;metro de un cuadrado es igual a la longitud de una diagonal multiplicada por el doble de la ra&iacute;z de 2. <br/>
+
+                          P = 2&radic;<span style="text-decoration:overline">2</span> d
+
+
+                      <br><br/>
+
+                      donde P es el per&iacute;metro del cuadrado,  <b>a</b> es la longitud de un lado del cuadrado, y  <b>d</b> es la longitud de la diagonal del cubo.                    
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>

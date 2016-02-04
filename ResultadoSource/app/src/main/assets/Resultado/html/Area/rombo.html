@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>A&#769;rea</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:150px">Rombo</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="circulo.html">Ci&#769;rculo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cuadrado.html">Cuadrado</a></li>
+                        <li class="divider"></li>
+                        <li><a href="elipse.html">Elipse</a></li>
+                        <li class="divider"></li>
+                        <li><a href="paralelogramo.html">Paralelogramo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="rectangulo.html">Recta&#769;ngulo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="rombo.html">Rombo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="trapecio.html">Trapecio</a></li>
+                        <li class="divider"></li>
+                        <li><a href="triangulo.html">Tria&#769;ngulo</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->                   
+                    <script type="text/javascript" src="../../Scripts/area_prog.js"></script>
+                    <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                    <script type="text/javascript" src="../../Scripts/Area/rombo.js"></script>
+                    <script type="text/javascript" src="../../Scripts/Area/common.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    <div class="row">
+                      Seleccione los datos conocidos: <br/><br/>
+                      <div class="input-field col s6 offset-s3">
+                        <select class="browser-default" id="vform" onchange="c_sc3(this.value)">
+                          <option value="1" class="my-option">longitudes de los lados y &aacute;ngulo entre ellos</option>
+                          <option value="2" class="my-option">longitud de un lado y altura adyacente</option>
+                          <option value="3" class="my-option">longitud de las diagonales del rombo</option>
+                        </select>                      
+                      </div>   
+                    </div>
+
+                    <div class="row">
+                      Introduzca lo siguiente: <br/><br/>
+                      <div class="input-field col s6 offset-s3">
+                        <div id="st1" style="display:inline;">a =</div>
+                        <input id="n1" type="number" class="validate data" maxLength="12" name="n1">              
+                      </div>   
+                    </div>
+                    <div class="row">                    
+                      <div class="input-field col s6 offset-s3">
+                        <div id="st2" style="display:inline;">&alpha; =</div>
+                        <input id="n2" type="number" class="validate data" maxLength="12" name="n2">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="sdiamond();">Hallar area</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                   <center><img  src="../../image/rombo.png" alt="Rombo"/></center>
+                    Un rombo es un cuadril&aacute;tero cuyos lados son todos iguales. Un rombo es un paralelogramo. Un rombo con &aacute;ngulos rectos se llama cuadrado.
+
+                    
+                    <b>F&oacute;rmulas para calcular el &aacute;rea de un rombo:</b><br/> 
+
+                      S = <b>a</b> &sdot; <b>h</b>
+
+                    <br> donde <b>S</b> es el &aacute;rea del rombo, <b>a</b> es la longitud de un lado, y <b>h</b> es la altura adyacente a ese lado;<br/><br>
+
+                      S = <b>a</b><sup>2</sup> &sdot;<b> sen &alpha;</b>
+
+                    <br> donde <b>S</b> es el &aacute;rea del rombo, <b>a</b> es la longitud de un lado, y <b>α</b> es el &aacute;ngulo entre los lados;<br><br>
+
+                    <center>
+                    <div class="valign-wrapper">
+                        <table style="display:inline; color:white" align="center">
+                          <tr>
+                            <td vAlign=center align=middle rowSpan=2>
+                              S =&nbsp;</td>
+                            <td style="BORDER-BOTTOM: white 1px solid;">
+                              1
+                            </td>
+                            <td  vAlign=center align=middle rowSpan=2>
+                              <b>d</b><sub>1</sub> &sdot; <b>d</b><sub>2</sub></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align=center>
+                              2
+                            </td>
+                          </tr>
+                        </table>
+                        </div>
+                    </center>
+
+                    donde <b>S</b> es el &aacute;rea del rombo, y <b>d</b><sub>1</sub>, <b>d</b><sub>2</sub> son las longitudes de las diagonales.                                        
+
+
+                  </div> 
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

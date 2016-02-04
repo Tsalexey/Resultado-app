@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>A&#769;rea</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:150px">Tria&#769;ngulo</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="circulo.html">Ci&#769;rculo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cuadrado.html">Cuadrado</a></li>
+                        <li class="divider"></li>
+                        <li><a href="elipse.html">Elipse</a></li>
+                        <li class="divider"></li>
+                        <li><a href="paralelogramo.html">Paralelogramo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="rectangulo.html">Recta&#769;ngulo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="rombo.html">Rombo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="trapecio.html">Trapecio</a></li>
+                        <li class="divider"></li>
+                        <li><a href="triangulo.html">Tria&#769;ngulo</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->                
+                  <script type="text/javascript" src="../../Scripts/area_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Area/formula_de_area_de_triangulo.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Area/common.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    <div class="row">
+                      &iquest;De qu&eacute; informaci&oacute;n dispone? <br/><br/>
+                      <div class="input-field col s6 offset-s3">
+                          <select class="browser-default" id="vform" onchange="c_sc4(this.value)">
+                            <option value="1" class="my-option">tres lados del tri&aacute;ngulo</option>
+                            <option value="2" class="my-option">dos lados y el &aacute;ngulo entre ellos</option>
+                            <option value="3" class="my-option">longitud de un lado y altura</option>                    
+                            <option value="4" class="my-option">tres lados y el radio de la circunferencia circunscrita</option>
+                            <option value="5" class="my-option">tres lados y el radio de la circunferencia inscrita</option>
+                            <option value="6" class="my-option">semiper&iacute;metro y radio de la circunferencia inscrita</option> 
+                            <option value="7" class="my-option">dos lados y un &aacute;ngulo del tri&aacute;ngulo</option>
+                            <option value="8" class="my-option">un lado y dos &aacute;ngulos del tri&aacute;ngulo</option>
+                            <option value="9" class="my-option">radio de la circunferencia circunscrita y dos &aacute;ngulos</option>          
+                          </select>            
+                      </div>   
+                    </div>
+                    
+                    <div class="row"> 
+                      Introduzca lo siguiente: <br/><br/>
+                      <div class="input-field col s6 offset-s3">
+                            <div id="st1" style="display:inline;">
+                                <div id="sst1" style="display:inline;">a =</div>
+                                <input id="n1" type="number" class="validate data" maxLength="12" name="n1" class="vector">
+                            </div>
+                      </div>
+                    </div>
+
+                    <div class="row">                     
+                      <div class="input-field col s6 offset-s3">                      
+                            <div id="st2" style="display:inline;">
+                                <div id="sst2" style="display:inline;">b =</div>
+                                <input id="n2" type="number" class="validate data" maxLength="12" name="n2"  class="vector">
+                            </div>
+                      </div>
+                    </div>
+                    
+                    <div class="row">   
+                      <div class="input-field col s6 offset-s3">                                        
+                            <div id="st3" style="display:inline;">
+                                <div id="sst3" style="display:inline;">c =</div>
+                                <input id="n3" type="number" class="validate data" maxLength="12" name="n3"  class="vector">
+                            </div>
+                      </div>
+                    </div>
+                    
+                    <div class="row"> 
+                      <div class="input-field col s6 offset-s3">                        
+                            <div id="st4" style="display: none;">
+                                <div id="sst4" style="display:inline;">c =</div>
+                                <input id="n4" type="number" class="validate data" maxLength="12" name="n4"  class="vector">
+                            </div>   
+                      </div>        
+                    </div>   
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="str();">Hallar area</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                    <center><img  src="../../image/triangulo.png" alt="Tri&aacute;ngulo"/></center>
+                    Un tri&aacute;ngulo es una figura que consiste de tres puntos no alineados, y tres segmentos, cada uno de los cuales conecta dos puntos. Los puntos son los v&eacute;rtices del tri&aacute;ngulo, y los segmentos son sus lados. <br/>
+
+                    
+                    <b>Las formas de hallar el &aacute;rea de un tri&aacute;ngulo.:</b><br/><br/>
+
+                    S = &radic;<div class="vector">p(p-a)(p-b)(p-c)</div>
+                    <br/>donde <b>p</b>=(a+b+c)/2
+                    <br/><br/>
+
+                    S = (a &sdot; b sen&gamma;)/2
+                    <br/><br/>
+
+                    S = a &sdot; h<sup>a</sup>/2
+                    <br/><br/>
+
+                     S = (a &sdot; b &sdot; c) / 4R
+                    <br/><br/>  
+
+                    S = (a + b + c) &sdot; r / 2
+                    <br/><br/>
+
+                    S = p &sdot; r
+                    <br/>donde <b>p</b>=(a+b+c)/2
+                    <br/>
+
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

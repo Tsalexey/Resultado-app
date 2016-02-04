@@ -1,0 +1,207 @@
+html {
+    -webkit-text-size-adjust:none; 
+}
+
+body{
+
+}
+
+li {
+	list-style: none;
+}
+
+/*
+
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+	.img {
+   text-align:center;
+}
+} 
+
+
+@media screen and (min-device-width: 481px) {
+	.img {
+   text-align:right;
+    }
+}
+*/
+
+div.border{
+	color: white;
+	border-radius: 10px;
+	border: 1px solid darkgreen;
+	min-width: 200px;
+	display: inline-block !important;
+	padding: 20px 4% 25px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.38), inset 0 0 3px #583325;
+	background: radial-gradient(circle farthest-side at 30px 20px, rgba(25, 88, 20, 0.70),rgba(18, 71, 14, 0.7));
+	letter-spacing: 1px;
+}
+
+/* отображение формулы в линию */
+div.formula{
+	font-size:14px; 
+	display:inline;
+}
+
+/* оступ в 10 пикселей и цвет текста */
+div.style{
+	padding: 10px;color: #3D2B1F ;
+}
+
+td.del{
+	border-bottom: white 1px solid; 
+	text-align: center;"
+}
+
+div.vector{
+	font-family:MJI; 
+	font-size:1.2em; 
+	display:inline;
+	text-decoration: overline;
+}
+
+input.mvname {
+	text-align: center;
+	width: 40px;
+}
+
+div.sqrt {
+	display: inline;
+	padding: 0px 0px 0px 0px;
+}
+
+td.num {
+    border-bottom: white 1px solid;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+td.denom {
+    text-align: center;
+    padding-top: 2px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+td.int {
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'LCChalk', sans-serif !important;
+    font-size: 14px;
+}
+
+table.tablita{
+	color: white;
+	display: inline-block;
+
+}
+
+input.frdr, input.vector{
+	text-align:center;
+	width:50px;
+
+   border: 1px solid #cccccc; //цвет рамки
+   border-radius: 3px; //закругление углов (общее)
+   -webkit-border-radius: 3px; //закругление углов (Google Chrome)
+   -moz-border-radius: 3px; //закругление углов (FireFox)
+   -khtml-border-radius: 3px; //закругление углов (Safari)
+   background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+   outline: none; // удаляет обводку в браузерах хром(желтая) и сафари(синяя)
+   height: 24px; // высота на свое усмотрение
+   width: 120px; // ширина на свое усмотрение
+   color: #cccccc; //цвет шрифта в обычном состоянии
+   font-size: 11px; // Размер шрифта
+   font-family: Tahoma; // Стиль шрифта
+}
+input.frc{
+	text-align:right;
+	width:50px;
+}
+
+
+
+input.classname {
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f09f3c), color-stop(1, #8f3911) );
+	background-color:#f09f3c;
+	border-radius:9px;
+	border:1px solid #472500;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:5px 24px;
+
+
+	text-shadow:1px 0px 0px #cc9f52;
+}
+
+input.classname:active {
+	position:relative;
+	top:1px;
+}
+/* хороший дизайн кнопки
+input.classname3 {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+input.classname3:hover { background: rgb(53, 167, 110); }
+input.classname3:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+*/
+
+.migalka{color:#583325;}
+.migalka:hover{color:#40c0ff;}
+
+select.crug,input.frdr,input.frc,input.mult{
+	border-bottom: 1px solid rgba(244, 244, 244, 0.7);
+	border-left: 1px solid rgba(224, 224, 224, 0.7);
+	border-radius: 4px;
+	border-right: 1px solid rgba(224, 224, 224, 0.7);
+	border-top: 1px solid rgba(192, 192, 192, 0.7);
+	color: #583325;
+	margin: 1px;
+}
+
+select.crug{
+	text-align: center;
+	width: 50px;
+	color: #583325;
+	background: rgba(88, 51, 37, 0.2);
+}
+
+.calcfr input{
+	color: black;
+}
+
+input, select{
+	border-bottom: 1px solid rgba(88, 51, 37, 0.2);
+	border-left: 1px solid rgba(88, 51, 37, 0.2);
+	border-radius: 4px;
+	border-right: 1px solid rgba(88, 51, 37, 0.2);
+	border-top: 1px solid rgba(88, 51, 37, 0.2);
+	background-color: rgba(88, 51, 37, 0.1) !important;
+	color: #583325;
+	box-shadow: 0px 0px 0px #000 inset !important; 
+}
+
+input.integer {
+	text-align: center;
+	width: 40px;
+}
+
+input.deriv{
+	text-align:left;
+	width:100%;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Nu&#769;meros complejos</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:270px">Valor absoluto</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="convertidor.html">Convertidor</a></li>
+                        <li class="divider"></li>
+                        <li><a href="operaciones.html">Operaciones principales</a></li>
+                        <li class="divider"></li>
+                        <li><a href="valor_absoluto.html">Valor absoluto</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->  
+
+                  <script type="text/javascript"> var mwidth=1;var languag="es";var RResh="Solucio&#769;n:";</script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/complex_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Numeros_complejos/valor_absoluto.js"></script>  
+
+                  <div id="calculadora" class="col s12">
+
+                  <div class="row">
+                    Introduzca un n&uacute;mero complejo:<br/><br/>
+                   <div class="input-field col s6 offset-s3">
+                     <div class="v1">
+                        z = 
+                        <input id="r1" type="number" class="validate data" maxLength="12">   
+                        + i&sdot;  
+                        <input id="i1" type="number" class="validate data" maxLength="12">            
+                        </div>    
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="modul();">Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                  Valor absoluto de nu&#769;mero complejo (tambie&#769;n llamado mo&#769;dulo de un nu&#769;mero complejo) es el mo&#769;dulo de un nu&#769;mero complejo <b>z = x + yi</b>, denotado como <b>|z|</b>, se define como <b>&radic;</b><span class=vector>(x2+y2)</span>.<br/> Es la distancia entre el origen y el punto que representa al nu&#769;mero complejo. <br/><br/>                        
+
+                  </div> 
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

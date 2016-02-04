@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Porcentaje</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:250px">% que X representa de Y</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="porcentaje1.html">Hallar X% del n&uacute;mero Y</a></li>
+                        <li class="divider"></li>
+                        <li><a href="porcentaje2.html">Hallar el n&uacute;mero X, conociendo a qu&eacute; porcentaje de Y equivale</a></li>
+                        <li class="divider"></li>
+                        <li><a href="porcentaje3.html">Sumar o restar X% de Y</a></li>
+                        <li class="divider"></li>
+                        <li><a href="porcentaje4.html">Hallar % que el X representa de Y</a></li>
+                        <li class="divider"></li>
+                        <li><a href="porcentaje5.html">Calculadora de dep&oacute;sito</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->  
+            
+                  <script type="text/javascript">var mwidth=1;var languag="es";var RResh="Solucio&#769;n:";</script>
+                  <script type="text/javascript" src="../../Scripts/percents_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Porcentaje/porcentaje4.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    Hallar el % que <br/><br/>
+
+                    <div class="row">                     
+                      <div class="input-field col s6 offset-s3">                      
+                          el n&uacute;mero  
+                          <INPUT type="number" id="n_1" class="validate data" maxLength=12 size=10 name="n_1">                          
+                          representa del n&uacute;mero 
+                          <INPUT type="number" id="n_2" class="validate data" maxLength=12 size=10 name=n_2 >
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick=percent4("n")>Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                    <b>F&oacute;rmula para calcular el <b>x</b> porciento del n&uacute;mero <b>y</b> :</b><br/> 
+
+                    <div class="valign-wrapper">
+                      <table cellspacing=0 cellpadding=0 border=0 align=center style="color:white">
+                        <tbody>
+                          <tr>
+                            <td class=num>
+                              <b>x</b>
+                              %
+                            </td>
+                            <td class=int rowSpan=2>
+                              &nbsp;&sdot;&nbsp;
+                              <b>y</b>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class=denom>100%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>                                 
+
+                  </div> 
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

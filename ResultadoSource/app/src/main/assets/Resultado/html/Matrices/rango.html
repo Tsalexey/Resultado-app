@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Matricez</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:150px">Rango</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="determinante.html">Determinante</a></li>
+                        <li class="divider"></li>
+                        <li><a href="matriz_inversa.html">Matriz inversa</a></li>
+                        <li class="divider"></li>
+                        <li><a href="matriz_inversa_cofactores.html">Matriz inversa mediante cofactores</a></li>
+                        <li class="divider"></li>
+                        <li><a href="matriz_transpuesta.html">Matriz transpuesta</a></li>
+                        <li class="divider"></li>
+                        <li><a href="multiplicacion.html">Multiplicacio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="rango.html">Rango</a></li>
+                        <li class="divider"></li>
+                        <li><a href="suma_y_resta.html">Suma y resta</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->  
+                  <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:";  </script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/matrix_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Matrices/rango.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    Seleccione el tama&ntilde;o de la matriz:<br/><br/>
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3">
+                          N&uacute;mero de filas:<br/><br/>
+                          <select name="vsize" onchange=mhigth1(this.value) class="browser-default">
+                            <option value="2" class="my-option">2</option>
+                            <option value="3" selected="true" class="my-option">3</option>
+                            <option value="4" class="my-option">4</option>
+                            <option value="5" class="my-option">5</option>
+                            <option value="6" class="my-option">6</option>
+                            <option value="7" class="my-option">7</option>
+                          </select>        
+                      </div>   
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3">
+                          N&uacute;mero de filas:<br/><br/>
+                          <select name="vsize" onchange=mwidth1(this.value) class="browser-default">
+                            <option value="2" class="my-option">2</option>
+                            <option value="3" selected="true" class="my-option">3</option>
+                            <option value="4" class="my-option">4</option>
+                            <option value="5" class="my-option">5</option>
+                            <option value="6" class="my-option">6</option>
+                            <option value="7" class="my-option">7</option>
+                          </select>       
+                      </div>   
+                    </div>
+
+                    Introduzca los valores de la matriz:<br/><br/>
+
+                    <div id="vect" name="vect" align="center">
+                      <div id="m1">
+                        <table>
+                          <TR>
+                            <TD vAlign=center align=middle rowSpan=3>A = </TD><TD rowSpan=3><img src="../../image/LS.GIF" width="5" height="75"/></td><TD><INPUT id="a_1_1" type='number' maxLength=8 class="validate data"></TD><TD><INPUT id="a_1_2" type='number' maxLength=8 class="validate data"></TD><TD><INPUT id="a_1_3" type='number' maxLength=8 class="validate data"></td><TD vAlign=center align=middle rowSpan=3><img src="../../image/RS.GIF" width="5" height="75"/></td>
+                          </TR>
+                          <TR>
+                            <TD><INPUT id="a_2_1" type='number' maxLength=8 class="validate data"></TD><TD><INPUT id="a_2_2" type='number' maxLength=8 class="validate data"></TD><TD><INPUT id="a_2_3" type='number' maxLength=8 class="validate data"></td>
+                          </TR>
+                          <TR>
+                            <TD><INPUT id="a_3_1" type='number' maxLength=8 class="validate data"></TD><TD><INPUT id="a_3_2" type='number' maxLength=8 class="validate data"></TD><TD><INPUT id="a_3_3" type='number' maxLength=8 class="validate data"></td>
+                          <TR>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="mrank();">Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+
+                  El rango de una matriz es el nu&#769;mero de filas (o columnas) linealmente independientes. Utilizando esta definicio&#769;n se puede calcular usando el me&#769;todo de Gauss.<br/><br/>
+
+                  Tambie&#769;n podemos decir que el rango es: el orden de la mayor submatriz cuadrada no nula. Utilizando esta definicio&#769;n se puede calcular el rango usando determinantes.<br/><br/>
+
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>

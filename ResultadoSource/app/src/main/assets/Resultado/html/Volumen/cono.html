@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Volumen</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:200px">Cono</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="cilindro.html">Cilindro</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cono.html">Cono</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cubo.html">Cubo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="esfera.html">Esfera</a></li>
+                        <li class="divider"></li>
+                        <li><a href="paralelepipedo.html">Paralelepi&#769;pedo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="paralelepipedo_recto.html">Paralelepi&#769;pedo recto</a></li>
+                        <li class="divider"></li>
+                        <li><a href="piramide.html">Pira&#769;mide</a></li>
+                        <li class="divider"></li>
+                        <li><a href="prisma.html">Prisma</a></li>
+                        <li class="divider"></li>
+                        <li><a href="tetraedro.html">Tetraedro</a></li>                        
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR --> 
+
+                <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:";  </script>
+                <script type="text/javascript" src="../../Scripts/obyem_prog.js"></script>
+                <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                <script type="text/javascript" src="../../Scripts/Volumen/cono.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                  Introduzca el radio y la altura del cono:<br/><br/>
+
+                    <div class="row">   
+                      <div class="input-field col s6 offset-s3">                                        
+                        R = <INPUT id=n1 class="validate data" type='number' maxLength=12 size=10>
+                      </div>
+                    </div>
+
+                    <div class="row">   
+                      <div class="input-field col s6 offset-s3">                                        
+                        h = <INPUT id=n2 class="validate data" type='number' maxLength=12 size=10>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="vcone();">Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+
+                      <center><img src="../../image/cono.png" alt="Cono"/></center>
+
+                      Un cono es el s&oacute;lido resultante de combinar todas las semirrectas que, proviniendo de un punto com&uacute;n (el v&eacute;rtice del cono), intersecan un plano.  Tambi&eacute;n se puede definir al cono como el s&oacute;lido resultante de rotar un tri&aacute;ngulo recto alrededor de uno de sus catetos<br/><br/>
+
+                      El volumen del cono es igual a un tercio del &aacute;rea de su base multiplicada por su altura.<br/><br/>
+
+                      <b>F&oacute;rmulas para calcular el volumen del cono:</b><br/><br/>
+
+                      <center>
+                        <div class="border">
+                          <table align=center style="color:white">
+                            <tr>
+                              <td vAlign=center align=middle rowSpan=2>
+                                V =&nbsp;</td>
+                              <td style="BORDER-BOTTOM: white 1px solid;">
+                                1
+                              </td>
+                              <td vAlign=center align=middle rowSpan=2>
+                                &nbsp;&pi; &sdot; R<sup>2</sup> &sdot;h
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align=center>
+                                3
+                              </td>
+                            </tr>
+                          </table>
+
+                          <br/>
+
+                          <table align=center style="color:white">
+                            <tr>
+                              <td vAlign=center align=middle rowSpan=2>
+                                V =&nbsp;
+                              </td>
+                              <td style="BORDER-BOTTOM: white 1px solid;">
+                                1
+                              </td>
+                              <td vAlign=center align=middle rowSpan=2>
+                                &nbsp; S<sub>o</sub> &sdot; h
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align=center>
+                                3
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </center>
+
+                      <br>
+
+                       donde <b>V</b> es el volumen del cono,  <b>S<sub>o</sub></b> es el &aacute;rea de la base del cono, <b>R</b> es el radio de la base del cono,  <b>h</b> es la altura del cono, y  &pi; = 3.141592.    
+
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>

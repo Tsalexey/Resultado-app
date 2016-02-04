@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:700px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Geometria</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:220px">Ecuacio&#769;n de recta</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="angulo_entre_planos.html">A&#769;ngulo entre planos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="angulo_entre_recta_y_plano.html">A&#769;ngulo entre recta y plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_plano.html">Distancia de punto a plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_recta.html">Distancia de punto a recta</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_recta_en_plano.html">Distancia de punto a recta en plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_entre_planos.html">Distancia entre planos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="ecuacion_de_plano.html">Ecuacio&#769;n de plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="ecuacion_de_recta.html">Ecuacio&#769;n de recta</a></li>
+                        <li class="divider"></li>
+                        <li><a href="longitud_y_distancia.html">Longitud y distancia</a></li>
+                        <li class="divider"></li>
+                        <li><a href="punto_medio_de_segmento.html">Punto medio de segmento</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->                
+
+                    <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/cart_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Geometria/ecuacion_de_una_recta.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    Seleccione el espacio dimensional necesario:<br/><br/>
+
+                    Dimensiones del espacio
+                    <div class="row">                     
+                      <div class="input-field col s6 offset-s3"> 
+                        <select name="vsize" onchange=pdimension(this.value) class="browser-default">
+                          <option value="2" class="my-option">2</option>
+                          <option value="3" selected="true" class="my-option">3</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <center>
+
+                      Ingrese las coordenadas de los puntos<br/>
+
+                      <div id=vect name="vect"> 
+                          A: (<div id="v1" style="display:inline;"><INPUT type="number" id="n1" type='number' maxLength=8 class="validate data">,<INPUT type="number" id="n2" type='number' maxLength=8 class="validate data">,<INPUT type="number" id="n3" type='number' maxLength=8 class="validate data"></div>)
+                      </div>
+
+                      <div id=vect1 name="vect1">
+                          B: (<div id="v2" style="display:inline;"><INPUT type="number" id="n4" type='number' maxLength=8 class="validate data">,<INPUT type="number" id="n5" type='number' maxLength=8 class="validate data">,<INPUT type="number" id=n6 type='number' maxLength=8 class="validate data"></div>)
+                      </div>
+
+                    </center>
+
+                    <br/>
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick=qline()>Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>

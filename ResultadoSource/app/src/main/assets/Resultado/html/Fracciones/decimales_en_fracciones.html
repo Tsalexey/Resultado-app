@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:700px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Fracciones</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:150px">Nu&#769;meros ... decimales en fracciones</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="comparacion.html">Comparacio&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="decimales_en_fracciones.html">Nu&#769;meros decimales en fracciones</a></li>
+                        <li class="divider"></li>
+                        <li><a href="fracciones_impropias_en_numeros_mixtos.html">Fracciones impropias en nu&#769;meros mixtos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="numeros_mixtos_en_fracciones_impropias.html">Nu&#769;meros mixtos en fracciones impropias</a></li>
+                        <li class="divider"></li>
+                        <li><a href="operaciones_con_decimales_y_fracciones.html">Operaciones con decimales y fracciones</a></li>
+                        <li class="divider"></li>
+                        <li><a href="operaciones_con_dos_fracciones.html">Operaciones con dos fracciones</a></li>                     
+                        <li class="divider"></li>
+                        <li><a href="reduccion.html">Reduccio&#769;n</a></li>  
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR --> 
+                            
+                  <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/drobs_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Fracciones/decimal_en_fraccion.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    Para convertir un n&uacute;mero decimal en una fracci&oacute;n, introduzca el n&uacute;mero decimal:<br/><br/>
+
+
+
+                    <div class="row">
+                      <INPUT id=c1 class="frc"  type='number' maxLength=6>
+                    </div>
+
+                        <div id="Ac"></div>
+                        <div align=center id="An"></div>                   
+                        <div align=center id="Ad"></div>
+
+                    <a class="waves-effect waves-red my-btn" onclick="transform2()">Convertir</a>
+                    <br/>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                    Para convertir un decimal en una fracci&oacute;n, imagine la parte a la derecha de la coma decimal como un entero dividido por 10 elevado a la potencia correspondiente. Luego simplifique la fracci&oacute;n resultante y, como resultado, escriba la parte entera con su signo para as&iacute; obtener una fracci&oacute;n mixta.
+
+                  </div> 
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

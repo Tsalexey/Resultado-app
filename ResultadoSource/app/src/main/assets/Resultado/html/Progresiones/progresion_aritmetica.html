@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Progresiones</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:240px">Progresion aritme&#769;tica</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="progresion_aritmetica.html">Progresion aritme&#769;tica</a></li>
+                        <li class="divider"></li>
+                        <li><a href="sumatoria_de_progresion_aritmetica.html">Sumatoria de progresion aritmetica</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->    
+                  <script type="text/javascript">var mwidth=1;var languag="es";var RResh="Solucio&#769;n:";</script>           
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/progress_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Progresiones/progresion_aritmetica.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    &iquest;De qu&eacute; informaci&oacute;n dispone?<br/><br/>
+
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3">
+                        <input id="aa" type="radio" class="validate data " maxLength="12" name="pr" onclick="chr1(1)" checked="checked">
+                        <label for="aa"> valor de uno de los t&eacute;rminos de la progresi&oacute;n aritm&eacute;tica y el paso de la progresi&oacute;n (<b>a<sub>i</sub></b>, <b>d</b>)</label>
+                      </div>   
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6 offset-s3">
+                        <input id="bb" type="radio" class="validate data" maxLength="12" name="pr" onclick="chr1(2)">
+                        <label for="bb"> valores de dos t&eacute;rminos de la progresi&oacute;n aritm&eacute;tica (<b>a<sub>i</sub></b>, <b>a<sub>j</sub></b>)</label>
+                      </div>   
+                    </div>
+
+                    Introduzca lo siguiente:<br/><br/>
+
+                    <div class="row"> 
+                      <div class="input-field col s6 offset-s3"> 
+                        n = <INPUT type="number" id="nn" class="validate data" maxLength=6 size=6>
+                      </div>
+                    </div>
+
+                    valor de los coeficientes y valores de los t&eacute;rminos correspondientes de la progresi&oacute;n<br/>
+
+                    <div class="row"> 
+                      <div class="input-field col s6 offset-s3"> 
+                        i = <INPUT id="i1" size=6 class="validate data" onchange=index_change(1)>
+                      </div>
+                    </div>
+
+                    <div class="row"> 
+                      <div class="input-field col s6 offset-s3"> 
+                        a<sub id="ii1">i</sub> =<INPUT id="ai1" class="validate data" size=6>
+                      </div>
+                    </div>
+
+                    <div id="st1" style="display:none">
+                      <div class="row"> 
+                        <div class="input-field col s6 offset-s3"> 
+                          j =<INPUT id="i2" size=6 class="validate data" onchange=index_change(2)>
+                        </div>
+                      </div>
+                      <div class="row"> 
+                        <div class="input-field col s6 offset-s3"> 
+                          a<sub id="ii2">j</sub> =<INPUT id="ai2" class="validate data" size=6>
+                        </div>
+                      </div>                      
+                    </div>
+
+                    <div id="st2" style="display:none">
+                      <div class="row"> 
+                        paso de la progresi&oacute;
+                      </div>                      
+                    </div>
+
+                    <div id="st3">
+                      <div class="row"> 
+                        <div class="input-field col s6 offset-s3"> 
+                          d =<INPUT id="dd" class="validate data" size=6>
+                        </div>
+                      </div>                   
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="ar_p();">Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>    
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                    Una progresi&oacute;n aritm&eacute;tica es una secuencia de n&uacute;meros (t&eacute;rminos de la progresi&oacute;n), cada uno de los cuales se obtiene mediante la suma de un valor constante al t&eacute;rmino anterior donde <b>d</b> es el paso o diferencia de la progresi&oacute;n:<br/> 
+
+                    <b>a</b><sub>1</sub>,  <b>a</b><sub>1</sub> + <b>d</b>,  <b>a</b><sub>1</sub> + 2<b>d</b>, ..., <b>a</b><sub>1</sub> + (<b>n</b> - 1)<b>d</b>, ...
+                  </div> 
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

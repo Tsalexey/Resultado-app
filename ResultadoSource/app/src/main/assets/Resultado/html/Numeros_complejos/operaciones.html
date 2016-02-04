@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Nu&#769;meros complejos</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:270px">Operaciones principales</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="convertidor.html">Convertidor</a></li>
+                        <li class="divider"></li>
+                        <li><a href="operaciones.html">Operaciones principales</a></li>
+                        <li class="divider"></li>
+                        <li><a href="valor_absoluto.html">Valor absoluto</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->  
+            
+                  <script type="text/javascript"> var mwidth=1;var languag="es";var RResh="Solucio&#769;n:";</script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/complex_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Numeros_complejos/suma_resta_mul_div.js"></script>  
+
+                  <div id="calculadora" class="col s12">
+
+                    <div class="row">
+                      Introduzca n&uacute;meros complejos:<br/> <br/>
+                     <div class="input-field col s6 offset-s3">
+                        <div class="v1">
+                          <input id="r1" type="number" class="validate data" maxLength="12">   
+                          + i&sdot;  
+                          <input id="i1" type="number" class="validate data" maxLength="12">
+                    </div>
+                    <br/>
+                    <div class="row">
+                          <div class="">
+                            <select class="browser-default" id="Op" style="display:inline">
+                              <option value=+ class="my-option">+</option>
+                              <option value=- class="my-option">-</option>
+                              <option value="*"; class="my-option">*</option>
+                              <option value="/" class="my-option">/</option>
+                            </select>                         
+                          </div>
+                    </div>
+
+                    <div class="row">
+                          <input id="r2" type="number" class="validate data" maxLength="12">   
+                          + i&sdot;  
+                          <input id="i2" type="number" class="validate data" maxLength="12">
+                        </div>    
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="calculation();">Convertir</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+
+                    <div id="res0" align=center></div>
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                      La suma y diferencia de números complejos se realiza sumando y restando las partes reales y las partes imaginarias entre sí, respectivamente.<br/><br/>
+
+                      (a + bi) + (c + di) = (a + c) + (b + d)i<br/>
+
+                      (a + bi) − (c + di) = (a − c) + (b − d)i    <br/>       
+
+                      <br/><br/>
+
+                       El producto de los números complejos se realiza aplicando la propiedad distributiva del producto respecto de la suma y teniendo en cuenta que i<sup>2</sup> = −1.<br/><br/>
+
+                      (a + bi) · (c + di) = (ac − bd) + (ad + bc)i <br/>
+
+                      <br/><br/>
+
+
+
+                    El cociente de números complejos se realiza multiplicando numerador y denominador por el conjugado de este.<br/><br/>
+
+                    <center>
+                      <table>
+                        <tbody>
+                        <tr>
+                          <td rowspan="2" class="del">a + b&sdot;i</td>
+                          <td></td>
+                          <td rowspan="2" class="del">ac + bd</td>
+                          <td></td>
+                          <td rowspan="2" class="del">bc - ad</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">=</td>
+                          <td rowspan="2">+ i&sdot;</td>                     
+                        </tr>
+                        <tr>
+                          <td rowspan="2">c + d&sdot;i</td>
+                          <td rowspan="2">c<sup>2</sup> + d<sup>2</sup></td>
+                          <td rowspan="2">c<sup>2</sup> + d<sup>2</sup></td>
+                        </tr>
+                        </tbody>
+                      </table>   
+                    </center>        
+
+                  </div> 
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

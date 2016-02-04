@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:700px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Fracciones</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:160px">Nu&#769;meros ... mixtos en fracciones impropias</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="comparacion.html">Comparacioo&#769;n</a></li>
+                        <li class="divider"></li>
+                        <li><a href="decimales_en_fracciones.html">Nu&#769;meros decimales en fracciones</a></li>
+                        <li class="divider"></li>
+                        <li><a href="fracciones_impropias_en_numeros_mixtos.html">Fracciones impropias en nu&#769;meros mixtos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="numeros_mixtos_en_fracciones_impropias.html">Nu&#769;meros mixtos en fracciones impropias</a></li>
+                        <li class="divider"></li>
+                        <li><a href="operaciones_con_decimales_y_fracciones.html">Operaciones con decimales y fracciones</a></li>
+                        <li class="divider"></li>
+                        <li><a href="operaciones_con_dos_fracciones.html">Operaciones con dos fracciones</a></li>                     
+                        <li class="divider"></li>
+                        <li><a href="reduccion.html">Reduccioo&#769;n</a></li>  
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR --> 
+                            
+                  <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucioo&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/drobs_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Fracciones/fracciones_impropias.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    Para convertir un n&uacute;mero mixto en una fracci&oacute;n impropia, introduzca un n&uacute;mero mixto::<br/><br/>
+
+
+                    <div align=center width=100% id="mmblok">
+                      <div class="calcfr">
+                        <table cellSpacing=0 cellPadding=0 border=0 align=center>
+                            <tr>
+                              <td vAlign=center align=middle rowSpan=2>
+                                <INPUT id="c1" class="frc" tabIndex=1 type='number' maxLength=6></td>
+                              <td class="del">
+                                <INPUT type="number" id="n1" class=frc tabIndex=2 type='number' maxLength=6></td>
+                              <td vAlign=center align=middle rowSpan=2>&nbsp;</td>
+                              <td vAlign=center align=middle rowSpan=2>
+                                </td>
+                              <td vAlign=center align=middle rowSpan=2>&nbsp;</td>
+                              <td vAlign=center align=middle rowSpan=2>
+                                <div id="Ac"></div>
+                              </td>
+                              <td style="TEXT-ALIGN: center;">
+                                <div align=center id="An"></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="TEXT-ALIGN: center;">
+                                <INPUT id="d1" class="frc" tabIndex=3 type='number' maxLength=6></td>
+                              <td style="TEXT-ALIGN: center;">
+                                <div align=center id="Ad"></div>
+                              </td>
+                            </tr>
+                        </table>
+                      </div>
+                    </div>
+
+                    <a class="waves-effect waves-red my-btn" onclick="transform()">Convertir</a>
+                    <br/>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                 Una fraccio&#769;n impropia es una fraccio&#769;n que tiene un numerador ma&#769;s grande o igual a su denominador. Una fraccio&#769;n propia es una fraccio&#769;n con el numerador ma&#769;s pequeño que el denominador.<br/><br/>
+
+                Un nu&#769;mero mixto consta de un entero seguido de una fraccio&#769;n propia.<br/><br/>
+
+                <b>Ejemplo:</b> El nu&#769;mero mixto 3 3/5, se puede cambiar a una fraccio&#769;n impropia convirtiendo la porcio&#769;n entera a una fraccio&#769;n con el mismo denominador que tiene la porcio&#769;n fraccionaria y luego sumando las dos fracciones. En este caso la porcio&#769;n entera (3) se convierte a 15/5. La suma de las dos fracciones es 15/5 + 3/5 = 18/5.<br/><br/>
+
+                La conversio&#769;n entera es: 
+                3 3/5  =   15/5  +  3/5  =   18/5.                   
+
+                  </div> 
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

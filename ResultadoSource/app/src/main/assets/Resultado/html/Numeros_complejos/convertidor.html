@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Nu&#769;meros complejos</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:150px">Convertidor</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="convertidor.html">Convertidor</a></li>
+                        <li class="divider"></li>
+                        <li><a href="operaciones.html">Operaciones principales</a></li>
+                        <li class="divider"></li>
+                        <li><a href="valor_absoluto.html">Valor absoluto</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->  
+            
+                  <script type="text/javascript"> var mwidth=1;var languag="es";var RResh="Solucio&#769;n:";</script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/complex_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Numeros_complejos/convertidor.js"></script>  
+
+                  <div id="calculadora" class="col s12">
+
+                  <div class="row">
+                    Introduzca un n&uacute;mero complejo:<br/><br/>
+                   <div class="input-field col s6 offset-s3">
+                     <div class="v1">
+                        z = 
+                        <input id="r11" type="number" class="validate data" maxLength="12">   
+                        + i&sdot;  
+                        <input id="i11" type="number" class="validate data" maxLength="12">            
+                        </div>    
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="form_converter();">Convertir</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                  
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                    Representaci&oacute;n de n&uacute;meros complejos: 
+                    <br/> 
+
+                    <b>Forma bin&oacute;mica:</b><br/> 
+
+                    <b>z</b> = <b>x</b> + <b>i</b>&sdot;y
+
+                    <br/>
+
+                    <b>Forma trigonom&eacute;trica:</b><br/>
+
+                    <b>z</b> = <b>r</b> (cos <b>&phi;</b> + <b><b>i</b></b> sen <b>&phi;</b>)
+
+                    <br/>
+
+                    <b>Forma exponencial:</b><br/>
+
+                    <b>z</b> = <b>e</b><sup><b>i</b> &phi;</sup>                           
+
+                  </div> 
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:600px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Ecuaciones</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:260px">Me&#769;todo de sustituciones</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="bicuadradas.html">Bicuadradas</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cuadraticas.html">Cuadraticas</a></li>
+                        <li class="divider"></li>
+                        <li><a href="matrices.html">Matrices</a></li>
+                        <li class="divider"></li>
+                        <li><a href="cramer.html">Metodo de Cra&#769;mer</a></li>
+                        <li class="divider"></li>
+                        <li><a href="gaus.html">Metodo de Ga&#769;us</a></li>
+                         <li class="divider"></li>
+                        <li><a href="sustituciones.html">Metodo de sustituciones</a></li>                       
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR --> 
+                            
+                  <script type="text/javascript">var mwidth=1;var languag="es";var RResh="Solucio&#769;n:";</script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/matrix_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Ecuaciones/metodo_de_sustituciones.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+                    <div class="row">
+                       Seleccione el n&uacute;mero de inc&oacute;gnitas:<br/><br/>
+                            <select name="vsize" onchange=vhigthwidthA2(this.value) class="browser-default">
+                              <option value="2" class="my-option">2</option>
+                              <option value="3" selected="true"  class="my-option">3</option>
+                              <option value="4"  class="my-option">4</option>
+                              <option value="5"  class="my-option">5</option>
+                              <option value="6"  class="my-option">6</option>
+                            </select>  
+                    </div>
+
+
+                   Complete el sistema de ecuaciones lineales:<br/><br/>
+                    <div id="m1">
+                      <div class="row"> 
+                        <div class="input-field col s6 offset-s3">
+                          <input id="a_1_1" type="number" class="validate data" maxLength="12" name="n1"> 
+                          x <sub>1</sub> +
+                          <input id="a_1_2" type="number" class="validate data" maxLength="12" name="n1"> 
+                          x <sub>2</sub> +
+                          <input id="a_1_3" type="number" class="validate data" maxLength="12" name="n1"> 
+                          x <sub>3</sub> =
+                          <input id="a_1_4" type="number" class="validate data" maxLength="12" name="n1">
+                        </div>    
+                      </div>
+
+                      <div class="row">
+                        <div class="input-field col s6 offset-s3">
+                          <input id="a_2_1" type="number" class="validate data" maxLength="12" name="n1"> 
+                          x <sub>1</sub> +
+                          <input id="a_2_2" type="number" class="validate data" maxLength="12" name="n1"> 
+                          x <sub>2</sub> +
+                          <input id="a_2_3" type="number" class="validate data" maxLength="12" name="n1"> 
+                          x <sub>3</sub> =
+                          <input id="a_2_4" type="number" class="validate data" maxLength="12" name="n1">
+                        </div>    
+                      </div>
+
+                      <div class="row">
+                        <div class="input-field col s6 offset-s3">
+                          <input id="a_3_1" type="number" class="validate data" maxLength="12" name="n1"> 
+                          x <sub>1</sub> +
+                          <input id="a_3_2" type="number" class="validate data" maxLength="12" name="n1"> 
+                          x <sub>2</sub> +
+                          <input id="a_3_3" type="number" class="validate data" maxLength="12" name="n1"> 
+                          x <sub>3</sub> =
+                          <input id="a_3_4" type="number" class="validate data" maxLength="12" name="n1">
+                        </div>    
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick="minverse5();">Resolver</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>  
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                  1. Se despeja una inco&#769;gnita en una de las ecuaciones.<br/>
+
+                  2. Se sustituye la expresio&#769;n de esta inco&#769;gnita en la otra ecuacio&#769;n, obteniendo un ecuacio&#769;n con una sola inco&#769;gnita.<br/>
+
+                  3. Se resuelve la ecuacio&#769;n.<br/>
+
+                  4. El valor obtenido se sustituye en la ecuacio&#769;n en la que apareci&#769;a la inco&#769;gnita despejada.<br/>
+
+                  5. Los dos valores obtenidos constituyen la solucio&#769;n del sistema.   <br/>                
+
+                  </div> 
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
+        

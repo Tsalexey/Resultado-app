@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../css/mystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="../../js/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="../../js/materialize.js"></script>
+
+      <div class="row">
+        <div class="col s12 ">       
+          <div class="card green darken-1" style="min-height:700px">          
+            <div class="card-content white-text">
+              <span class="card-title">                 
+
+              </span>
+
+              <div class="center"><h5>Geometria</h5></div>   
+
+              <div class="center">
+              
+                  <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button waves-effect waves-blue btn' href='#' data-activates='dropdown1' style="width:290px">A&#769;ngulo entre recta y plano</a></div><hr/>
+                    <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li class="divider"></li>
+                        <li><a href="angulo_entre_planos.html">A&#769;ngulo entre planos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="angulo_entre_recta_y_plano.html">A&#769;ngulo entre recta y plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_plano.html">Distancia de punto a plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_recta.html">Distancia de punto a recta</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_de_punto_a_recta_en_plano.html">Distancia de punto a recta en plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="distancia_entre_planos.html">Distancia entre planos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="ecuacion_de_plano.html">Ecuacio&#769;n de plano</a></li>
+                        <li class="divider"></li>
+                        <li><a href="ecuacion_de_recta.html">Ecuacio&#769;n de recta</a></li>
+                        <li class="divider"></li>
+                        <li><a href="longitud_y_distancia.html">Longitud y distancia</a></li>
+                        <li class="divider"></li>
+                        <li><a href="punto_medio_de_segmento.html">Punto medio de segmento</a></li>
+                      </ul> 
+                      </div>       
+                </div>
+
+              <p>
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat active" href="#calculadora"><img src="../../image/icons/calculator.png"/></a></li>                        
+                      <li class="tab col s3"><a class="waves-effect waves-blue btn-flat" href="#teoria"><img src="../../image/icons/book-open.png"/></a></li>
+                    </ul>
+                  </div>
+                </div>
+                  <!--CALCULATOR -->                
+
+                  <script type="text/javascript"> var mwidth=1; var languag="es"; var RResh="Solucio&#769;n:"; </script>
+                  <script type="text/javascript" src="../../Scripts/fract_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/cart_prog.js"></script>
+                  <script type="text/javascript" src="../../Scripts/Geometria/angulo_entre_una_recta_y_un_plano.js"></script>
+
+                  <div id="calculadora" class="col s12">
+
+
+                    Forma de la ecuaci&oacute;n de la recta:
+
+                    <div class="row">                    
+                      <div class="input-field col s6 offset-s3">
+                          <select id=n_sl onchange=select_0(this.value,"sl") class="browser-default">
+                              <option value="1" selected="true" class="my-option">can&oacute;nica</option>
+                              <option value="2" class="my-option">param&eacute;trica</option>
+                          </select>
+                      </div>
+                    </div>
+
+                    <center>
+                      <div id="sl_1">
+                          <table>
+                              <tr>
+                                  <td style="BORDER-BOTTOM: white 1px solid; TEXT-ALIGN: center;"><div class=formula>x</div> - <INPUT type="number" id=n_4 type='number' maxLength=8 class="validate data" value=""></td>
+                                  <td vAlign=center align=middle rowSpan=2>&nbsp;=&nbsp;</td>
+                                  <td style="BORDER-BOTTOM: white 1px solid; TEXT-ALIGN: center;"><div class=formula>y</div> - <INPUT type="number" id=n_5 type='number' maxLength=8 class="validate data" value=""></td>
+                                  <td vAlign=center align=middle rowSpan=2>&nbsp;=&nbsp;</td>
+                                  <td style="BORDER-BOTTOM: white 1px solid; TEXT-ALIGN: center;"><div class=formula>z</div> - <INPUT type="number" id=n_6 type='number' maxLength=8 class="validate data" value=""></td>
+                              </tr>
+                              <tr>
+                                  <td align=center><INPUT type="number" id=n_1 type='number' maxLength=8 class="validate data" value=1></td>
+                                  <td align=center><INPUT type="number" id=n_2 type='number' maxLength=8 class="validate data" value=1></td>
+                                  <td align=center><INPUT type="number" id=n_3 type='number' maxLength=8 class="validate data" value=1></td>
+                              </tr>
+                          </table>
+                      </div>
+
+                      <div id="sl_2" style="display:none;">
+                          <table>
+                              <tr>
+                                  <td rowspan="3"><img src="../../image/SS.png" width="10" height="60"></td>
+                                  <td><div class="formula">x</div> = <INPUT type="number" id=n_7 maxLength=8 class="validate data" value=""> <div class="formula">t</div> + <INPUT type="number" id=n_10 type='number' maxLength=8 class="validate data" value=""></td>
+                                  </tr><tr>
+                                  <td><div class="formula">y</div> = <INPUT type="number" id=n_8 maxLength=8 class="validate data" value=""> <div class="formula">t</div> + <INPUT type="number" id=n_11 type='number' maxLength=8 class="validate data" value=""></td>
+                              </tr>
+                              <tr>
+                                  <td><div class="formula">z</div> = <INPUT type="number" id=n_9 maxLength=8 class="validate data" value=""> <div class="formula">t</div> + <INPUT type="number" id=n_12 type='number' maxLength=8 class="validate data" value=""></td>
+                              </tr>
+                          </table>
+                      </div>
+
+
+                        <br/>Ecuaci&oacute;n del plano<br/>
+
+                        <INPUT type="number" id=n_13 type='number' maxLength=8 class="validate data" value=""><div class=formula>x</div> + <INPUT type="number" id=n_14 type='number' maxLength=8 class="validate data" value=""><div class=formula>y</div> + <INPUT type="number" id=n_15 type='number' maxLength=8 class="validate data" value=""><div class=formula>z</div> + <INPUT type="number" id=n_16 type='number' maxLength=8 class="validate data" value=""> = 0<br> <br/>
+
+                    </center>
+
+                    <br/>
+                    <div class="row">
+                        <a class="waves-effect waves-blue btn" onclick=angl_plane_line("n")>Calcular</a>
+                    </div>
+                    <br/>
+                    <div id="res" align=center></div>
+                    
+                  </div>
+                  <!-- CALCULATOR END, TEORIA-->
+                  <div id="teoria" class="col s12">
+                    
+                  El &aacute;ngulo entre una recta y un plano es el &aacute;ngulo entre la recta y su proyecci&oacute;n sobre el plano.<br/><br/>
+
+                  Si en el espacio tenemos una recta de vector direccional L<br/>
+                   <div class=vector>s</div>&nbsp;=&nbsp;{l;&nbsp;m;&nbsp;n}<br/>
+                   y la ecuaci&oacute;n de plano<br/>
+
+                   Ax + By + Cz + D = 0<br/>
+                   el &aacute;ngulo entre esta recta y el plano se puede hallar con la f&oacute;rmula:<br/><br/>
+
+                  <center>
+                    <div class="border">
+                      <table align=center style="color:white">
+                        <tr>
+                            <td vAlign=center align=middle rowSpan=2>
+                              <div class=formula>sen &phi;</div> =&nbsp;
+                            </td>
+                            <td class="del">
+                              | A &sdot; <div class=formula>l</div> + B &sdot; <div class=formula>m</div> + C &sdot; <div class=formula>n</div> |
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align=center>
+                              &radic;(<div class="sqrt">A<sup>2</sup> + B<sup>2</sup> + C<sup>2</sup></div>) &sdot; &radic;(<div class="sqrt"><div class=formula>l</div><sup>2</sup> + <div class=formula>m</div><sup>2</sup> + <div class=formula>n</div><sup>2</sup></div>)
+                            </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </center>
+                  </div>
+                  <!-- TEORIA END-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
